@@ -1,4 +1,3 @@
-# 9 algorítimos genéticos
 
 Segue a teoria da evolução de darwin, onde um numero de individuos é exposto a um determinado processo de seleção exemplificado pela imagem:
 

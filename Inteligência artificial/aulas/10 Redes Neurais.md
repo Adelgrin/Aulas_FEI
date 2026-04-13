@@ -1,4 +1,3 @@
-# 10 Redes neurais
 
 ## Modelo do neuronio McCulloch-Pitts
 

@@ -11,14 +11,14 @@
             "id": "91363e3756902c63",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "Inteligência artificial/aulas/2 Representação de conhecimento.md",
-                "mode": "source",
-                "source": false
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "2 Representação de conhecimento"
+              "icon": "diff",
+              "title": "Diff: workspace.json  (Working Tree)"
             }
           }
         ]
@@ -196,21 +196,21 @@
   },
   "active": "91363e3756902c63",
   "lastOpenFiles": [
-    "Inteligência artificial/aulas/1 Introdução.md",
-    "Inteligência artificial/aulas/8 Lógica e sistemas fuzzy.md",
+    "Inteligência artificial/aulas/11 Redes neurais avançadas.md",
     "Inteligência artificial/aulas/10 Redes Neurais.md",
     "Inteligência artificial/aulas/9 Algorítimos genéticos.md",
+    "Inteligência artificial/aulas/8 Lógica e sistemas fuzzy.md",
     "Inteligência artificial/aulas/7 Aprendizado indutivo.md",
     "Inteligência artificial/aulas/4 Mecanismos de Busca.md",
     "Inteligência artificial/aulas/3 Lógica de primeira ordem.md",
     "Inteligência artificial/aulas/2 Representação de conhecimento.md",
+    "Inteligência artificial/aulas/1 Introdução.md",
     "Tópicos avançados de engenharia de software/aulas/1 Introdução matéria.md",
     "TCC/Índice TCC.md",
     "Gestão de projetos de software/Índice Gestão de projetos.md",
     "Desenvolvimento de jogos/Indice.md",
     "Desenvolvimento de jogos/Indice",
     "Desenvolvimento de jogos",
-    "Inteligência artificial/aulas/11 Redes neurais avançadas.md",
     "Tópicos avançados de engenharia de software/Indice.md",
     "Inteligência artificial/aulas/9 Algorítimos genéticos.md~",
     "Inteligência artificial/aulas/8 Lógica e sistemas fuzzy.md~",

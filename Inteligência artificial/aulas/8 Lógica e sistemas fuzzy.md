@@ -1,4 +1,3 @@
-# 8 lógica e sistemas fuzzy
 
 ## Fuzzy:
 

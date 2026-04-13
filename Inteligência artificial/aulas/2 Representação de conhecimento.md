@@ -1,4 +1,3 @@
-# 2 Representação de conhecimento
 
 ## Lógica proposicional (LP):
 

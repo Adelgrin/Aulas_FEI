@@ -1,4 +1,3 @@
-# 7 Aprendizado indutivo
 
 ## Como desenvolver um data set para decision tree
 

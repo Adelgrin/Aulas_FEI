@@ -1,4 +1,3 @@
-# 11 Redes neurais avançadas
 
 ## Treinamento de redes neurais para imagens:
 

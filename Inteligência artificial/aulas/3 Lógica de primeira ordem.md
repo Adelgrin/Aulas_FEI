@@ -1,4 +1,3 @@
-# 3 Lógica de primeira ordem
 
 ## Modelos de LPO:
 

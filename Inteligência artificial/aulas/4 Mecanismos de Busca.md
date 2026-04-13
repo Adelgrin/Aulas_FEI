@@ -1,4 +1,3 @@
-# 4 Mecanismos de Busca
 
 
 Definidos funcionamento de buscas baseadas em arvores:
