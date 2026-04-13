@@ -31,9 +31,3 @@ As funções funcionam da seguinte forma-> Mãe(Andreia,Carlos)
 ## Solução de uma LPO:
 
 ![](imagens/S3IU3Wh06gwk4uI8_pZKZmN68hzuXllQaJum6e_wqBw=.png)
-
-$$
-\begin{table}[c|c|c]
-\exists a &
-\end{table}
-$$

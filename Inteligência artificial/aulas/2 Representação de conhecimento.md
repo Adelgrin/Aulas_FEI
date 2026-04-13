@@ -6,7 +6,7 @@ Trabalha com operadores unários e binários, sendo:
 
 operadores unários como(NOT) $\neg$
 
-e operadores binários (AND, OR, Implicação) $\wedge,\vee,\rarr$
+e operadores binários (AND, OR, Implicação) $\wedge,\vee,\to$
 
 trabalha apenas com verdadeiro ou falso
 
@@ -14,13 +14,12 @@ Implicância trabalha como or onde se um é verdadeiro a implicância é verdade
 
 $p = (q \vee r)$
 
-$p \rarr s$
-
+$p \to s$
 onde **q** ou **r** pode ser verdadeiro implicando em **p**
 
-• Eliminar $\lrarr$ substituindo$\alpha \lrarr \beta$ por$(\alpha \rarr \beta) \wedge (\beta \rarr \alpha)$
+• Eliminar $\to$ substituindo$\alpha \to \beta$ por$(\alpha \to \beta) \wedge (\beta \to \alpha)$
 
-• Eliminar $\rarr$ substituindo$\alpha \rarr \beta$por $\neg \alpha \vee \beta$
+• Eliminar $\to$ substituindo$\alpha \to \beta$por $\neg \alpha \vee \beta$
 
 • Eliminar dupla negação:$\neg \neg \alpha \equiv \alpha$
 
