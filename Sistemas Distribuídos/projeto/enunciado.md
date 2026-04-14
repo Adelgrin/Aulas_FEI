@@ -40,3 +40,9 @@ Exemplos:
 ## Entrega do projeto
 
 Para facilitar o semestre e não sobrecarregar as últimas semanas de aula, o projeto terá entregas parciais pelo Moodle com o prazo máximo de 1 semana após a liberação do enunciado sendo que cada parte deve ser desenvolvida em uma branch separada. A entrega no Moodle sendo um arquivo zip com o código desenvolvido até a parte específica e o link para a branch em que a parte foi desenvolvida.
+## Partes do projeto
+[[parte1]]
+[[parte2]]
+[[parte3]]
+[[parte4]]
+[[parte5]]

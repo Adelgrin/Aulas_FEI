@@ -13,7 +13,6 @@ Documentos relacionados as aulas de laboratório estão na pasta `LABS`
 Repositório desta matéria localizado em:
 
 [Adelgrin/eng\_software\_avc](https://github.com/Adelgrin/eng_software_avc)
-
 $$
 NF = (AP \cdot 0.3) + (AF \cdot 0.3) + (LAB \cdot 0.4) 
 $$

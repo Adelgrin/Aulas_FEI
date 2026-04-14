@@ -1,6 +1,6 @@
 # Aula 1 Gestão Software
 
-## Aspectos avançados de engenharia de sofware
+## Aspectos avançados de engenharia de software
 
 * Reuso de sisteamas.
 * Engenharia de software baseada em componentes.

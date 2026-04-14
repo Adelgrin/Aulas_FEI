@@ -1,6 +1,6 @@
 # 2 Reuso de software
 
-## Onde ultilizar:
+## Onde utilizar:
 
 Reultilização de software pode ser ultilizado em:
 

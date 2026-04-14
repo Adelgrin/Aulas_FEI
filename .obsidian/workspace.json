@@ -11,14 +11,24 @@
             "id": "91363e3756902c63",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
+                "file": "Tópicos avançados de engenharia de software/Indice.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: workspace.json  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "Indice"
+            }
+          },
+          {
+            "id": "d54a6f5933af2159",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -191,11 +201,23 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "omnisearch:Omnisearch": false
     }
   },
   "active": "91363e3756902c63",
   "lastOpenFiles": [
+    "Sistemas Distribuídos/indice.md",
+    "Inteligência artificial/Indice.md",
+    "Tópicos avançados de engenharia de software/Indice.md",
+    "Sistemas Distribuídos/projeto/enunciado.md",
+    "Sistemas Distribuídos/projeto/parte1.md",
+    "Tópicos avançados de engenharia de software/labs/Inicio de projeto.md",
+    "Tópicos avançados de engenharia de software/labs/Escolhas de reuso de software.md",
+    "Tópicos avançados de engenharia de software/aulas/3 ESBC.md",
+    "Tópicos avançados de engenharia de software/aulas/2 Reuso de software.md",
+    "Tópicos avançados de engenharia de software/aulas/1 Introdução matéria.md",
+    "Inteligência artificial/aulas/1 Introdução.md",
     "Inteligência artificial/aulas/11 Redes neurais avançadas.md",
     "Inteligência artificial/aulas/10 Redes Neurais.md",
     "Inteligência artificial/aulas/9 Algorítimos genéticos.md",
@@ -204,14 +226,11 @@
     "Inteligência artificial/aulas/4 Mecanismos de Busca.md",
     "Inteligência artificial/aulas/3 Lógica de primeira ordem.md",
     "Inteligência artificial/aulas/2 Representação de conhecimento.md",
-    "Inteligência artificial/aulas/1 Introdução.md",
-    "Tópicos avançados de engenharia de software/aulas/1 Introdução matéria.md",
     "TCC/Índice TCC.md",
     "Gestão de projetos de software/Índice Gestão de projetos.md",
     "Desenvolvimento de jogos/Indice.md",
     "Desenvolvimento de jogos/Indice",
     "Desenvolvimento de jogos",
-    "Tópicos avançados de engenharia de software/Indice.md",
     "Inteligência artificial/aulas/9 Algorítimos genéticos.md~",
     "Inteligência artificial/aulas/8 Lógica e sistemas fuzzy.md~",
     "Inteligência artificial/aulas/11 Redes neurais avançadas.md~",
@@ -233,14 +252,6 @@
     "Inteligência artificial/aulas/10 Redes neurais/assets/-TijtNxOxzkzwH4tBovJlIr6LxAIADft8276fXD3_8Y=.png",
     "Inteligência artificial/aulas/10 Redes neurais/index.md",
     "Inteligência artificial/aulas/10 Redes neurais/assets",
-    "Inteligência artificial/aulas/10 Redes neurais",
-    "Inteligência artificial/aulas/9 algorítimos genéticos/9 Algorítimos genéticos.md",
-    "Inteligência artificial/aulas/9 algorítimos genéticos/index.md",
-    "Inteligência artificial/aulas/8 lógica e sistemas fuzzy/8 Lógica e sistemas fuzzy.md",
-    "Inteligência artificial/aulas/8 lógica e sistemas fuzzy_1/index.md",
-    "Inteligência artificial/aulas/8 lógica e sistemas fuzzy/index.md",
-    "Inteligência artificial/aulas/7 Aprendizado indutivo/7 Aprendizado indutivo.md",
-    "Inteligência artificial/aulas/7 Aprendizado indutivo/index.md",
-    "Inteligência artificial/aulas/3 Lógica de primeira ordem/3 Lógica de primeira ordem.md"
+    "Inteligência artificial/aulas/10 Redes neurais"
   ]
 }
