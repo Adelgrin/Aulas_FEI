@@ -1,4 +1,4 @@
-Componentes vs Serviços
+## Componentes vs Serviços
 
 | Aspecto     | Componentes                       | Serviços                         |
 | ----------- | --------------------------------- | -------------------------------- |
@@ -62,3 +62,5 @@ sequenceDiagram
     Produto->>Broker: 3 - PRODUTO_VENDIDO
     Broker->>Pedido: 3.1 - PRODUTO_VENDIDO
 ```
+
+## Testing
