@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tópicos avançados de engenharia de software/aulas/5 Construção.md",
+                "file": "Tópicos avançados de engenharia de software/aulas/4 Design de um serviço.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5 Construção"
+              "title": "4 Design de um serviço"
             }
           },
           {
@@ -31,7 +31,8 @@
               "title": "Graph view"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -205,12 +206,12 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "91363e3756902c63",
+  "active": "d54a6f5933af2159",
   "lastOpenFiles": [
+    "Tópicos avançados de engenharia de software/aulas/4 Design de um serviço.md",
+    "Tópicos avançados de engenharia de software/aulas/5 Construção.md",
     "Inteligência artificial/aulas/9 Algorítimos genéticos.md",
     "Tópicos avançados de engenharia de software/imagens/Pasted image 20260414214710.png",
-    "Tópicos avançados de engenharia de software/aulas/5 Construção.md",
-    "Tópicos avançados de engenharia de software/aulas/4 Design de um serviço.md",
     "Inteligência artificial/aulas/8 Lógica e sistemas fuzzy.md",
     "Inteligência artificial/aulas/7 Aprendizado indutivo.md",
     "Inteligência artificial/aulas/4 Mecanismos de Busca.md",

@@ -35,10 +35,8 @@ poucas interfaces de ligação entre "componentes"
 Limitação de quem pode e deve ler determinados serviços
 ### Capacidade de Composição
 Baseado nos contratos o serviço deve acompanhar a composição, isto é a definição de com o serviço deve se comportar
-### Independencia de estado
+### Independência de estado
 stateless - não armazena estado, não guarda informação de sessões anteriores
 ### Interoperabilidade
 Capacidade de integração entre sistemas
 ![[Pasted image 20260414214710.png]]
-
----
