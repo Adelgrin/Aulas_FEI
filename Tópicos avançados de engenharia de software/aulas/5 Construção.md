@@ -7,6 +7,7 @@
 | Acoplamento | Médio (Dependencia direta)        | Baixo (contratos bem definidos)  |
 | Interface   | Interfaces fornecidas/requeridas  | Contratos de serviço (API, JSON) |
 | Exemplo     | ClienteComponente.buscarCliente() | GET /clientes{id}                |
+
 ## Orquestração
 ```mermaid
 sequenceDiagram 
