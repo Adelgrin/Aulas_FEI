@@ -18,7 +18,7 @@ A grande vantagem do request reply é o cliente sempre aguarda um reply para env
 
 ## Broker
 
-![](imagens/mdNCA62K550mCsWbiVmIUIh9TbobPL5pPYCgjcoZ4Bs=.png)
+![](../imagens/mdNCA62K550mCsWbiVmIUIh9TbobPL5pPYCgjcoZ4Bs=.png)
 
 funciona como um router para orquestrar clientes vs servidores para evitar concorrência de pacote
 
