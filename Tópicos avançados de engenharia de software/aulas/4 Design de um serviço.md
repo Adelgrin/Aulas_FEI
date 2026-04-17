@@ -39,4 +39,5 @@ Baseado nos contratos o serviço deve acompanhar a composição, isto é a defin
 stateless - não armazena estado, não guarda informação de sessões anteriores
 ### Interoperabilidade
 Capacidade de integração entre sistemas
-![[../imagens/Pasted image 20260414214710.png]]
+
+ ![[../imagens/Pasted image 20260414214710.png]]

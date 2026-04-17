@@ -3,6 +3,7 @@
   "theme": "obsidian",
   "enabledCssSnippets": [
     "custom-rainbow-colors",
-    "extended-colorschemes"
+    "extended-colorschemes",
+    "floating-search-bar"
   ]
 }
