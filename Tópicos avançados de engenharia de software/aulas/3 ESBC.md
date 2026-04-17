@@ -4,7 +4,7 @@
 
 ## Revisão do que são componentes
 
-![](imagens/c1SEmnLRI8bvBxzEIzwdRRqAF5Mu1LBRua6RQwg0Dgc=.png)
+![](../imagens/c1SEmnLRI8bvBxzEIzwdRRqAF5Mu1LBRua6RQwg0Dgc=.png)
 
 1. **Encapsulamento**: a lógica interna é escondida.
 2. **Interfaces bem definidas**: descrevem o que é oferecido e o que é requerido.

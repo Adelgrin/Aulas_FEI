@@ -17,4 +17,3 @@ NF =0.1 \cdot AT + 0.9 \cdot BANCA
 $$
 
 # Cronograma:
-

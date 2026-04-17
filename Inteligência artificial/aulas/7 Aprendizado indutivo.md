@@ -13,11 +13,11 @@ onde um atrubuto como: temperatura recebe -> {quente|morno|frio}
 
 exemplo de dataset:
 
-![](imagens/fQ0ceSHIVxWwmXY-T0pqGEze8jlFlw68okLUhjI_NAc=.png)
+![](../imagens/fQ0ceSHIVxWwmXY-T0pqGEze8jlFlw68okLUhjI_NAc=.png)
 
 Gerando uma arvore mais ou menos assim:
 
-![](imagens/ZmK-t2C7qqMn72STRFD2j0LdMq4C-KaoU_2BObbJuM8=.png)
+![](../imagens/ZmK-t2C7qqMn72STRFD2j0LdMq4C-KaoU_2BObbJuM8=.png)
 
 ## Função de ganho
 

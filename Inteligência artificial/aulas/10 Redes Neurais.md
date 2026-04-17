@@ -1,7 +1,7 @@
 
 ## Modelo do neuronio McCulloch-Pitts
 
-![](imagens/h0pRhyTqEeTgWlCS6yhQq3H5dhQXfx3mGrtKD_1fvwk=.png)
+![](../imagens/h0pRhyTqEeTgWlCS6yhQq3H5dhQXfx3mGrtKD_1fvwk=.png)
 
 dada pela função:
 
@@ -21,9 +21,9 @@ $$
 
 para calcular deriva-se a função de erro em fução ao peso (aplicando regras de cadeia quando necessario):
 
-![](imagens/wI044e1QbLZu-VbU6jct1OzGc42OdS8V4rLl_eNG_3Q=.png)
+![](../imagens/wI044e1QbLZu-VbU6jct1OzGc42OdS8V4rLl_eNG_3Q=.png)
 
 e aplicando uma taxa de erro resultando em:
 
-![](imagens/-TijtNxOxzkzwH4tBovJlIr6LxAIADft8276fXD3_8Y=.png)
+![](../imagens/-TijtNxOxzkzwH4tBovJlIr6LxAIADft8276fXD3_8Y=.png)
 

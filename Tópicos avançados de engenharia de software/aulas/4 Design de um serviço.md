@@ -20,9 +20,8 @@ Deve ser genérico
 ### Granularidade
 Escopo funcional (oque o serviço deve fazer)
 deve haver coordenação com outros serviços (quanto mais interligação entre serviços maior a **granularidade**)
-```
+> [!Nota]
 Serviços baseados em crud por exemplo são granularidade média
-```
 ### Autonomia
 um serviço independente que busque funcionar de maineira independente de outros
 ### Abstração
@@ -39,4 +38,5 @@ Baseado nos contratos o serviço deve acompanhar a composição, isto é a defin
 stateless - não armazena estado, não guarda informação de sessões anteriores
 ### Interoperabilidade
 Capacidade de integração entre sistemas
-![[Pasted image 20260414214710.png]]
+
+ ![[../imagens/Pasted image 20260414214710.png]]

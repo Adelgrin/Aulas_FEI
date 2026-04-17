@@ -1,4 +1,9 @@
 {
   "cssTheme": "AnuPpuccin",
-  "theme": "obsidian"
+  "theme": "obsidian",
+  "enabledCssSnippets": [
+    "custom-rainbow-colors",
+    "extended-colorschemes",
+    "floating-search-bar"
+  ]
 }
