@@ -8,7 +8,7 @@ Lógica fuzzy funciona como um range entre 0 e 1
 * quanto mais proximo de 1 maior o grau de pertinência do elemento para o conjunto
 * quanto mais proximo de 0 menor o grau de pertinência do elemento para o conjunto
 
-![](imagens/qm2fyvjf_w6u4hTug5WSPYD528MOFjvk0rlAT8oTu9w=.png)
+![](../imagens/qm2fyvjf_w6u4hTug5WSPYD528MOFjvk0rlAT8oTu9w=.png)
 
 nota-se que os estados de transição não são instantaneos e variam entre o grau de pertinência
 
@@ -16,11 +16,11 @@ nota-se que os estados de transição não são instantaneos e variam entre o gr
 
 ### Linear:
 
-![](imagens/EBVg3ZKZ0RbDPWxCefCCAR0_o-e2qjkTt8atskDJkTE=.png)
+![](../imagens/EBVg3ZKZ0RbDPWxCefCCAR0_o-e2qjkTt8atskDJkTE=.png)
 
 ### Trapezoidal:
 
-![](imagens/c2ZHfE0tsGxAw66TU7b0ztWGeXwlUWj3eDCDYVNPtF4=.png)
+![](../imagens/c2ZHfE0tsGxAw66TU7b0ztWGeXwlUWj3eDCDYVNPtF4=.png)
 
 $$
 Trap(x,a,b,c,d)= \begin{cases}
@@ -34,7 +34,7 @@ $$
 
 ### Triangular:
 
-![](imagens/7-8BRC0-03E4mpcoplEOKUFUsBudFKHoNt714OGr3h8=.png)
+![](../imagens/7-8BRC0-03E4mpcoplEOKUFUsBudFKHoNt714OGr3h8=.png)
 
 $$
 Tri(x,a,b,c)= \begin{cases}
@@ -47,7 +47,7 @@ $$
 
 ## Formato S (Sigmoid):
 
-![](imagens/8gKxWNgTO06D3lFhzxp_v84--_XwJCWVExeyNsRHReQ=.png)
+![](../imagens/8gKxWNgTO06D3lFhzxp_v84--_XwJCWVExeyNsRHReQ=.png)
 
 $$
 S(x,a,b)= \begin{cases}
@@ -60,7 +60,7 @@ $$
 
 ### formato Z:
 
-![](imagens/IXikANWaP32KZXfjy3G0VVYjzEQTSjAd12T7Ji4SLqU=.png)
+![](../imagens/IXikANWaP32KZXfjy3G0VVYjzEQTSjAd12T7Ji4SLqU=.png)
 
 $$
 Z(x,a,b) = \begin{cases}
@@ -73,15 +73,15 @@ $$
 
 ### Formato pi:
 
-![](imagens/n1oFfEGkXRs42ENHTxu8p5vkcgYdN_n8Vjec2WrLKhU=.png)
+![](../imagens/n1oFfEGkXRs42ENHTxu8p5vkcgYdN_n8Vjec2WrLKhU=.png)
 
 ### Formato gaussiano:
 
-![](imagens/XRMn5j-WM3c-YvfwsUzn7HgIdPGgfbdNLKJwZdUC7dc=.png)
+![](../imagens/XRMn5j-WM3c-YvfwsUzn7HgIdPGgfbdNLKJwZdUC7dc=.png)
 
 ### Singleton:
 
-![](imagens/FOcljI5tYLyLtSK5KfYOSXrPMGuHNCXuBu8V4TE09Ig=.png)
+![](../imagens/FOcljI5tYLyLtSK5KfYOSXrPMGuHNCXuBu8V4TE09Ig=.png)
 
 $$
 Sgl(x,a)= \begin{cases}
@@ -98,7 +98,7 @@ que ultiliza os operadores **or** **and** e **not**
 
 ultiliza-se centro de gravidade ou centroid da figura gerada pelo gráfico:
 
-![](imagens/N6WsPxxKYoEmQUdN1BoQ47J10ayyw64YhsUlFrcWfq0=.png)
+![](../imagens/N6WsPxxKYoEmQUdN1BoQ47J10ayyw64YhsUlFrcWfq0=.png)
 
 Descrito por:
 

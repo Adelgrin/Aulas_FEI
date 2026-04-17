@@ -24,12 +24,12 @@ onde **q** ou **r** pode ser verdadeiro implicando em **p**
 
 ### Exemplo:
 
-![](imagens/bo-tjP2Z0CDMKgewPScF5nrAIo3_zoQkr1TAKY2bgLI=.png)
+![](../imagens/bo-tjP2Z0CDMKgewPScF5nrAIo3_zoQkr1TAKY2bgLI=.png)
 
 ## Clausula de Horn:
 
 busca adicionar toda a equação como uma implicância:
 
 
-![](imagens/L8lZiwrjbVNTewV1cq9X2z8Rv1OXKZ_rfSugFi781UU=.png)
+![](../imagens/L8lZiwrjbVNTewV1cq9X2z8Rv1OXKZ_rfSugFi781UU=.png)
 

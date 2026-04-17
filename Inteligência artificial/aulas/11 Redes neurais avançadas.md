@@ -1,9 +1,9 @@
 
-## Treinamento de redes neurais para imagens:
+## Treinamento de redes neurais para ../imagens:
 
 consiste no processo de simplificar a imagem ultilizando convolução, onde é calculado um kernel e deste kernel calculado um valor para a imagem:
 
-![](imagens/zJAzPReVTfiV_cBXqNE3hsxVu-kDm2dqBThz0CSN3Eo=.png)
+![](../imagens/zJAzPReVTfiV_cBXqNE3hsxVu-kDm2dqBThz0CSN3Eo=.png)
 
 ### Aplicação ReLU
 
@@ -13,7 +13,7 @@ após a convolução é aplicado o `ReLU` que considera todos os valores menores
 
 dada uma matrix podemos fazer o maxpooling para de um valor menor que a matrix dada,  onde se extrai os maiores valores da matrix para o tamanho desejado
 
-![](imagens/-qFhU8uALD5xUJqFHtWmJEE44hkApXRFVo4yo0mGzIo=.png)
+![](../imagens/-qFhU8uALD5xUJqFHtWmJEE44hkApXRFVo4yo0mGzIo=.png)
 
 ## Saída softmax:
 
