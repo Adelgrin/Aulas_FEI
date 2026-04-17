@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*===============================================================
                            AnuPpuccin
                            ----------
@@ -3474,14 +3473,14 @@ body.theme-dark {
 .ͼ2 .cm-panels-bottom {
   border-top: 1px solid rgb(var(--ctp-surface1));
 }
-.ͼ2 .cm-panels-bottom input:hover, .ͼ2 .cm-panels-bottom input:focus, .ͼ2 .cm-panels-bottom input:focus-visible {
-  border: none;
-  box-shadow: none;
-}
 .ͼ2 .cm-panels-bottom input {
   background-color: transparent;
   font-family: var(--font-monospace);
   width: 100%;
+}
+.ͼ2 .cm-panels-bottom input:hover, .ͼ2 .cm-panels-bottom input:focus, .ͼ2 .cm-panels-bottom input:focus-visible {
+  border: none;
+  box-shadow: none;
 }
 
 .ͼp .cm-vim-panel {
@@ -3965,6 +3964,15 @@ body.is-translucent {
   --title-bar-duration: 300ms;
   --title-bar-target-translate-y: 18px;
   --title-bar-translate-y: 40px;
+  /**
+  * This should fix the drag/click titlebar issue.
+  * 
+  * Invisible boxes are not rendered (as if they were fully transparent),
+  * cannot be interacted with (and behave as if they had pointer-events: none),
+  * and are removed from navigation (similar to display: none).
+  * 
+  * @see: https://drafts.csswg.org/css-display/#visibility
+  */
 }
 .anp-autohide-titlebar:not(.is-mobile) .workspace-leaf-content .view-header {
   margin-top: calc(var(--title-bar-translate-y) * -1);
@@ -3993,17 +4001,6 @@ body.is-translucent {
 }
 .anp-autohide-titlebar:not(.is-mobile) .workspace-leaf-content .view-header-title {
   --file-header-font-size: var(--font-ui-medium);
-}
-.anp-autohide-titlebar:not(.is-mobile) {
-  /**
-  * This should fix the drag/click titlebar issue.
-  * 
-  * Invisible boxes are not rendered (as if they were fully transparent),
-  * cannot be interacted with (and behave as if they had pointer-events: none),
-  * and are removed from navigation (similar to display: none).
-  * 
-  * @see: https://drafts.csswg.org/css-display/#visibility
-  */
 }
 .anp-autohide-titlebar:not(.is-mobile) .workspace-leaf-content .view-header > div {
   transition: visibility var(--title-bar-duration) var(--title-bar-delay);
@@ -4039,6 +4036,14 @@ body:not(.anp-alternate-tab-toggle):not(.anp-disable-newtab-align) .workspace-sp
 }
 .anp-safari-tab-toggle .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-container .workspace-tab-header-container-inner {
   margin: 5px 0 !important;
+  gap: var(--anp-safari-tab-gap, 10px);
+}
+.anp-safari-tab-toggle .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header {
+  border-radius: var(--anp-safari-tab-radius, 5px);
+  border: var(--anp-safari-border-width, 1px) solid var(--tab-outline-color);
+  background-color: var(--tab-background-inactive);
+  color: var(--text-muted);
+  max-width: var(--tab-max-width);
 }
 .anp-safari-tab-toggle .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header:not(.is-active) {
   --icon-color: var(--text-muted);
@@ -4050,13 +4055,6 @@ body:not(.anp-alternate-tab-toggle):not(.anp-disable-newtab-align) .workspace-sp
 .anp-safari-tab-toggle .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header::before, .anp-safari-tab-toggle .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header::after {
   display: none;
 }
-.anp-safari-tab-toggle .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header {
-  border-radius: var(--anp-safari-tab-radius, 5px);
-  border: var(--anp-safari-border-width, 1px) solid var(--tab-outline-color);
-  background-color: var(--tab-background-inactive);
-  color: var(--text-muted);
-  max-width: var(--tab-max-width);
-}
 .anp-safari-tab-toggle .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header.is-active {
   background-color: var(--tab-background-active);
   max-width: var(--tab-max-width);
@@ -4065,19 +4063,16 @@ body:not(.anp-alternate-tab-toggle):not(.anp-disable-newtab-align) .workspace-sp
 .anp-safari-tab-toggle .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
   background-color: transparent;
 }
-.anp-safari-tab-toggle .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-container .workspace-tab-header-container-inner {
-  gap: var(--anp-safari-tab-gap, 10px);
-}
 .anp-safari-tab-toggle:not(.anp-disable-newtab-align) .workspace-tab-header-container-inner {
   width: 100%;
 }
 
+.anp-safari-tab-toggle.anp-safari-tab-animated .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header {
+  transition: max-width 400ms ease-in-out, width 400ms ease-in-out, flex-grow 400ms ease, background-color 150ms;
+}
 .anp-safari-tab-toggle.anp-safari-tab-animated .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header.is-active {
   flex-grow: 1.67;
   max-width: var(--tab-max-width-active);
-}
-.anp-safari-tab-toggle.anp-safari-tab-animated .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header {
-  transition: max-width 400ms ease-in-out, width 400ms ease-in-out, flex-grow 400ms ease, background-color 150ms;
 }
 
 .anp-alternate-tab-toggle,
@@ -4219,12 +4214,10 @@ body:not(.anp-alternate-tab-toggle):not(.anp-disable-newtab-align) .workspace-sp
 }
 .anp-mini-tab-toggle .workspace-split:not(.mod-left-split):not(.mod-right-split) .workspace-tab-header-container-inner .workspace-tab-header {
   background-color: transparent;
+  box-shadow: none;
 }
 .anp-mini-tab-toggle .workspace-split:not(.mod-left-split):not(.mod-right-split) .workspace-tab-header-container-inner .workspace-tab-header::before, .anp-mini-tab-toggle .workspace-split:not(.mod-left-split):not(.mod-right-split) .workspace-tab-header-container-inner .workspace-tab-header::after {
   display: none;
-}
-.anp-mini-tab-toggle .workspace-split:not(.mod-left-split):not(.mod-right-split) .workspace-tab-header-container-inner .workspace-tab-header {
-  box-shadow: none;
 }
 .anp-mini-tab-toggle .workspace-split:not(.mod-left-split):not(.mod-right-split) .workspace-tab-header-container-inner .workspace-tab-header.is-active {
   border-bottom: 2px solid var(--color-accent);
@@ -4526,11 +4519,11 @@ body.anp-border-layout .workspace .workspace-split.mod-left-split {
 body.anp-border-layout .workspace .workspace-split.mod-left-split .workspace-tabs {
   background-color: var(--card-background-color);
 }
-body.anp-border-layout .workspace .workspace-split.mod-left-split .workspace-tabs .workspace-tab-container .workspace-leaf {
-  background-color: var(--card-foreground-color);
-}
 body.anp-border-layout .workspace .workspace-split.mod-left-split .workspace-tabs .workspace-tab-container {
   border-left: var(--border-border-style);
+}
+body.anp-border-layout .workspace .workspace-split.mod-left-split .workspace-tabs .workspace-tab-container .workspace-leaf {
+  background-color: var(--card-foreground-color);
 }
 body.anp-border-layout .workspace .workspace-split.mod-left-split .workspace-tabs:not(.mod-top) .workspace-tab-header-container {
   border-left: var(--border-border-style);
@@ -4554,11 +4547,11 @@ body.anp-border-layout .workspace .workspace-split.mod-right-split {
 body.anp-border-layout .workspace .workspace-split.mod-right-split .workspace-tabs {
   background-color: var(--card-background-color);
 }
-body.anp-border-layout .workspace .workspace-split.mod-right-split .workspace-tabs .workspace-tab-container .workspace-leaf {
-  background-color: var(--card-foreground-color);
-}
 body.anp-border-layout .workspace .workspace-split.mod-right-split .workspace-tabs .workspace-tab-container {
   border-right: var(--border-border-style);
+}
+body.anp-border-layout .workspace .workspace-split.mod-right-split .workspace-tabs .workspace-tab-container .workspace-leaf {
+  background-color: var(--card-foreground-color);
 }
 body.anp-border-layout .workspace .workspace-split.mod-right-split .workspace-tabs:not(.mod-top) .workspace-tab-header-container {
   border-right: var(--border-border-style);
@@ -4570,11 +4563,11 @@ body.anp-border-layout .workspace .workspace-split.mod-right-split .workspace-ta
   border-top: var(--border-border-style);
   border-right: var(--border-border-style);
 }
-body.anp-border-layout .workspace .workspace-split:not(.mod-right-split):not(.mod-left-split) > .workspace-split {
-  padding-bottom: 0;
-}
 body.anp-border-layout .workspace .workspace-split:not(.mod-right-split):not(.mod-left-split) {
   background-color: var(--card-background-color);
+}
+body.anp-border-layout .workspace .workspace-split:not(.mod-right-split):not(.mod-left-split) > .workspace-split {
+  padding-bottom: 0;
 }
 body.anp-border-layout .workspace .workspace-split:not(.mod-right-split):not(.mod-left-split) .workspace-tabs {
   background-color: var(--card-background-color);
@@ -4693,11 +4686,11 @@ Support me: https://buymeacoffee.com/AnubisNekhet
 .callout:not([data-callout-metadata*=revert]) {
   --callout-blend-mode: normal;
 }
-.theme-light .callout:not([data-callout-metadata*=revert]) > .callout-title > .callout-title-inner {
-  color: var(--text-normal);
-}
 .callout:not([data-callout-metadata*=revert]) > .callout-title > .callout-title-inner {
   flex-grow: var(--anp-callout-fold-position, 0);
+}
+.theme-light .callout:not([data-callout-metadata*=revert]) > .callout-title > .callout-title-inner {
+  color: var(--text-normal);
 }
 .callout:not([data-callout-metadata*=revert]):not(.is-collapsible) > .callout-title .callout-title-inner {
   font-weight: 500;
@@ -4910,13 +4903,13 @@ Support me: https://buymeacoffee.com/AnubisNekhet
   mix-blend-mode: normal;
   background-color: transparent !important;
 }
-.callout[data-callout=formula] .callout-title .callout-icon,
-.callout[data-callout=formula] .callout-title .callout-fold {
-  display: none;
-}
 .callout[data-callout=formula] .callout-title {
   background-color: rgba(var(--callout-color), 0.05) !important;
   color: var(--ctp-text);
+}
+.callout[data-callout=formula] .callout-title .callout-icon,
+.callout[data-callout=formula] .callout-title .callout-fold {
+  display: none;
 }
 .callout[data-callout=formula] .callout-content {
   background-color: transparent !important;
@@ -4938,10 +4931,10 @@ Support me: https://buymeacoffee.com/AnubisNekhet
   --text-highlight-bg: rgba(var(--anp-highlight-color, var(--ctp-yellow)), 0.2);
 }
 
-.markdown-rendered .internal-link:hover, .markdown-rendered .internal-link:active, .markdown-rendered .internal-link.is-unresolved:hover, .markdown-rendered .internal-link.is-unresolved {
+.markdown-rendered .internal-link {
   text-decoration-line: none;
 }
-.markdown-rendered .internal-link {
+.markdown-rendered .internal-link:hover, .markdown-rendered .internal-link:active, .markdown-rendered .internal-link.is-unresolved:hover, .markdown-rendered .internal-link.is-unresolved {
   text-decoration-line: none;
 }
 
@@ -6038,15 +6031,15 @@ body.rainbow-tags {
   margin-left: 10px;
 }
 
-.anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card] > .callout-content, .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card] > .callout-content {
-  padding: 0;
-  background-color: var(--background-primary);
-  overflow-y: hidden;
-}
 .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card], .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card] {
   background-color: var(--background-primary);
   border-radius: 6px;
   mix-blend-mode: normal;
+  overflow-y: hidden;
+}
+.anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card] > .callout-content, .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card] > .callout-content {
+  padding: 0;
+  background-color: var(--background-primary);
   overflow-y: hidden;
 }
 .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card-prop], .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card-prop] {
@@ -6060,6 +6053,10 @@ body.rainbow-tags {
 .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card-prop] > .callout-content, .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card-prop] > .callout-content {
   padding: 0;
 }
+.anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop], .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop] {
+  border: none;
+  padding: 0;
+}
 .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop] > .callout-content, .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop] > .callout-content {
   margin: 0 10px 7px 10px;
   background-color: var(--background-primary);
@@ -6070,49 +6067,41 @@ body.rainbow-tags {
 }
 .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop] > .callout-title, .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop] > .callout-title {
   text-transform: uppercase;
+  background-color: transparent;
 }
 .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop] > .callout-title > .callout-title-inner, .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop] > .callout-title > .callout-title-inner {
   color: rgba(var(--ctp-text), 0.7);
   font-size: 80%;
 }
-.anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop] > .callout-title, .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop] > .callout-title {
-  background-color: transparent;
-}
-.anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop], .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop] {
-  border: none;
-  padding: 0;
+.anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-index], .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-index] {
+  border-radius: 0;
+  margin: -1px;
 }
 .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-index] > .callout-content, .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-index] > .callout-content {
   padding: 0;
 }
-.anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-index], .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-index] {
-  border-radius: 0;
-}
 .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-index] p:first-child, .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-index] p:first-child {
   margin-bottom: 0;
 }
-.anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-index], .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-index] {
-  margin: -1px;
+.anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-sidebar], .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-sidebar] {
+  background-color: var(--background-secondary);
 }
 .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-sidebar] > .callout-content, .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-sidebar] > .callout-content {
   padding-right: 0;
   padding-left: 0;
   background-color: var(--background-secondary);
 }
-.anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-sidebar], .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-sidebar] {
-  background-color: var(--background-secondary);
-}
 .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop-image] > .callout-content, .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop-image] > .callout-content {
   padding: 0;
-}
-.anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-body] > .callout-content, .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-body] > .callout-content {
-  padding: var(--callout-padding);
-  background-color: var(--background-primary);
 }
 .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-body], .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-body] {
   border-width: 0 1px 0 0;
   background-color: var(--background-primary);
   mix-blend-mode: normal;
+}
+.anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-body] > .callout-content, .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-body] > .callout-content {
+  padding: var(--callout-padding);
+  background-color: var(--background-primary);
 }
 .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-index], .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card-prop], .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop-image], .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-sidebar], .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-body], .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card], .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-index], .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card-prop], .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop-image], .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-sidebar], .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-body], .anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek.anp-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card] {
   border-color: var(--background-modifier-border);
@@ -6336,6 +6325,9 @@ body.anp-colorful-frame-icon-toggle-dark.theme-dark {
 .anp-colorful-frame:not(.anp-card-layout, .anp-border-layout).is-focused .mod-top .workspace-tab-header-new-tab .clickable-icon:hover {
   color: var(--colorful-icon-color-alt);
 }
+.anp-colorful-frame:not(.anp-card-layout, .anp-border-layout).anp-mini-tab-toggle .mod-top, .anp-colorful-frame:not(.anp-card-layout, .anp-border-layout).is-focused.anp-mini-tab-toggle .mod-top, .anp-colorful-frame:not(.anp-card-layout, .anp-border-layout).is-focused.anp-mini-tab-toggle .mod-top, .anp-colorful-frame:not(.anp-card-layout, .anp-border-layout).is-focused.is-focused.anp-mini-tab-toggle .mod-top {
+  --tab-text-color-focused-active-current: var(--colorful-icon-color-alt);
+}
 .anp-colorful-frame:not(.anp-card-layout, .anp-border-layout).anp-mini-tab-toggle .mod-top .workspace-tab-header,
 .anp-colorful-frame:not(.anp-card-layout, .anp-border-layout).anp-mini-tab-toggle .mod-top .workspace-tab-header.is-active, .anp-colorful-frame:not(.anp-card-layout, .anp-border-layout).is-focused.anp-mini-tab-toggle .mod-top .workspace-tab-header,
 .anp-colorful-frame:not(.anp-card-layout, .anp-border-layout).is-focused.anp-mini-tab-toggle .mod-top .workspace-tab-header.is-active, .anp-colorful-frame:not(.anp-card-layout, .anp-border-layout).is-focused.anp-mini-tab-toggle .mod-top .workspace-tab-header,
@@ -6352,9 +6344,6 @@ body.anp-colorful-frame-icon-toggle-dark.theme-dark {
 .anp-colorful-frame:not(.anp-card-layout, .anp-border-layout).is-focused.anp-mini-tab-toggle .mod-top .workspace-tab-header.is-active .workspace-tab-header-inner-close-button, .anp-colorful-frame:not(.anp-card-layout, .anp-border-layout).is-focused.is-focused.anp-mini-tab-toggle .mod-top .workspace-tab-header .workspace-tab-header-inner-close-button,
 .anp-colorful-frame:not(.anp-card-layout, .anp-border-layout).is-focused.is-focused.anp-mini-tab-toggle .mod-top .workspace-tab-header.is-active .workspace-tab-header-inner-close-button {
   --tab-text-color-focused: var(--colorful-icon-color-alt);
-  --tab-text-color-focused-active-current: var(--colorful-icon-color-alt);
-}
-.anp-colorful-frame:not(.anp-card-layout, .anp-border-layout).anp-mini-tab-toggle .mod-top, .anp-colorful-frame:not(.anp-card-layout, .anp-border-layout).is-focused.anp-mini-tab-toggle .mod-top, .anp-colorful-frame:not(.anp-card-layout, .anp-border-layout).is-focused.anp-mini-tab-toggle .mod-top, .anp-colorful-frame:not(.anp-card-layout, .anp-border-layout).is-focused.is-focused.anp-mini-tab-toggle .mod-top {
   --tab-text-color-focused-active-current: var(--colorful-icon-color-alt);
 }
 .anp-colorful-frame:not(.anp-card-layout, .anp-border-layout) .mod-right-split .mod-top .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
@@ -6655,6 +6644,11 @@ Icons were taken from Font Awesome: https://fontawesome.com/
   --checkbox-color: rgb(var(--ctp-green));
   --checkbox-color-hover: rgb(var(--ctp-green));
 }
+.anp-custom-checkboxes [data-task="!"] > input[type=checkbox]:checked,
+.anp-custom-checkboxes [data-task="!"] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task="!"][type=checkbox]:checked {
+  --checkbox-color: rgb(var(--ctp-yellow));
+  --checkbox-color-hover: rgb(var(--ctp-yellow));
+}
 .anp-custom-checkboxes [data-task="!"] > input[type=checkbox]:checked:after,
 .anp-custom-checkboxes [data-task="!"] > p > input[type=checkbox]:checked:after, .anp-custom-checkboxes [data-task="!"][type=checkbox]:checked:after {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 512'%3E%3C!--!  --%3E%3Cpath d='M96 64c0-17.7-14.3-32-32-32S32 46.3 32 64V320c0 17.7 14.3 32 32 32s32-14.3 32-32V64zM64 480c22.1 0 40-17.9 40-40s-17.9-40-40-40s-40 17.9-40 40s17.9 40 40 40z'/%3E%3C/svg%3E");
@@ -6668,10 +6662,11 @@ Icons were taken from Font Awesome: https://fontawesome.com/
   left: calc(var(--checkbox-size) * 1);
   font-weight: bold;
 }
-.anp-custom-checkboxes [data-task="!"] > input[type=checkbox]:checked,
-.anp-custom-checkboxes [data-task="!"] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task="!"][type=checkbox]:checked {
-  --checkbox-color: rgb(var(--ctp-yellow));
-  --checkbox-color-hover: rgb(var(--ctp-yellow));
+.anp-custom-checkboxes [data-task="?"] > input[type=checkbox]:checked,
+.anp-custom-checkboxes [data-task="?"] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task="?"][type=checkbox]:checked {
+  --checkbox-color: transparent;
+  --checkbox-color-hover: transparent;
+  border-width: 0;
 }
 .anp-custom-checkboxes [data-task="?"] > input[type=checkbox]:checked:after,
 .anp-custom-checkboxes [data-task="?"] > p > input[type=checkbox]:checked:after, .anp-custom-checkboxes [data-task="?"][type=checkbox]:checked:after {
@@ -6688,11 +6683,14 @@ Icons were taken from Font Awesome: https://fontawesome.com/
   left: calc(var(--checkbox-size) * 1);
   font-weight: bold;
 }
-.anp-custom-checkboxes [data-task="?"] > input[type=checkbox]:checked,
-.anp-custom-checkboxes [data-task="?"] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task="?"][type=checkbox]:checked {
-  --checkbox-color: transparent;
-  --checkbox-color-hover: transparent;
-  border-width: 0;
+.anp-custom-checkboxes [data-task="-"] {
+  text-decoration: var(--checklist-done-decoration);
+  color: var(--checklist-done-color);
+}
+.anp-custom-checkboxes [data-task="-"] > input[type=checkbox]:checked,
+.anp-custom-checkboxes [data-task="-"] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task="-"][type=checkbox]:checked {
+  --checkbox-color: rgb(var(--ctp-red));
+  --checkbox-color-hover: rgb(var(--ctp-red));
 }
 .anp-custom-checkboxes [data-task="-"] > input[type=checkbox]:checked:after,
 .anp-custom-checkboxes [data-task="-"] > p > input[type=checkbox]:checked:after, .anp-custom-checkboxes [data-task="-"][type=checkbox]:checked:after {
@@ -6707,14 +6705,11 @@ Icons were taken from Font Awesome: https://fontawesome.com/
   left: calc(var(--checkbox-size) * 1);
   font-weight: bold;
 }
-.anp-custom-checkboxes [data-task="-"] > input[type=checkbox]:checked,
-.anp-custom-checkboxes [data-task="-"] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task="-"][type=checkbox]:checked {
-  --checkbox-color: rgb(var(--ctp-red));
-  --checkbox-color-hover: rgb(var(--ctp-red));
-}
-.anp-custom-checkboxes [data-task="-"] {
-  text-decoration: var(--checklist-done-decoration);
-  color: var(--checklist-done-color);
+.anp-custom-checkboxes [data-task=b] > input[type=checkbox]:checked,
+.anp-custom-checkboxes [data-task=b] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task=b][type=checkbox]:checked {
+  --checkbox-color: transparent;
+  --checkbox-color-hover: transparent;
+  border-width: 0;
 }
 .anp-custom-checkboxes [data-task=b] > input[type=checkbox]:checked:after,
 .anp-custom-checkboxes [data-task=b] > p > input[type=checkbox]:checked:after, .anp-custom-checkboxes [data-task=b][type=checkbox]:checked:after {
@@ -6731,8 +6726,8 @@ Icons were taken from Font Awesome: https://fontawesome.com/
   left: calc(var(--checkbox-size) * 1);
   font-weight: bold;
 }
-.anp-custom-checkboxes [data-task=b] > input[type=checkbox]:checked,
-.anp-custom-checkboxes [data-task=b] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task=b][type=checkbox]:checked {
+.anp-custom-checkboxes [data-task=I] > input[type=checkbox]:checked,
+.anp-custom-checkboxes [data-task=I] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task=I][type=checkbox]:checked {
   --checkbox-color: transparent;
   --checkbox-color-hover: transparent;
   border-width: 0;
@@ -6752,8 +6747,8 @@ Icons were taken from Font Awesome: https://fontawesome.com/
   left: calc(var(--checkbox-size) * 1);
   font-weight: bold;
 }
-.anp-custom-checkboxes [data-task=I] > input[type=checkbox]:checked,
-.anp-custom-checkboxes [data-task=I] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task=I][type=checkbox]:checked {
+.anp-custom-checkboxes [data-task=p] > input[type=checkbox]:checked,
+.anp-custom-checkboxes [data-task=p] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task=p][type=checkbox]:checked {
   --checkbox-color: transparent;
   --checkbox-color-hover: transparent;
   border-width: 0;
@@ -6773,8 +6768,8 @@ Icons were taken from Font Awesome: https://fontawesome.com/
   left: calc(var(--checkbox-size) * 1);
   font-weight: bold;
 }
-.anp-custom-checkboxes [data-task=p] > input[type=checkbox]:checked,
-.anp-custom-checkboxes [data-task=p] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task=p][type=checkbox]:checked {
+.anp-custom-checkboxes [data-task=c] > input[type=checkbox]:checked,
+.anp-custom-checkboxes [data-task=c] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task=c][type=checkbox]:checked {
   --checkbox-color: transparent;
   --checkbox-color-hover: transparent;
   border-width: 0;
@@ -6794,8 +6789,8 @@ Icons were taken from Font Awesome: https://fontawesome.com/
   left: calc(var(--checkbox-size) * 1);
   font-weight: bold;
 }
-.anp-custom-checkboxes [data-task=c] > input[type=checkbox]:checked,
-.anp-custom-checkboxes [data-task=c] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task=c][type=checkbox]:checked {
+.anp-custom-checkboxes [data-task=i] > input[type=checkbox]:checked,
+.anp-custom-checkboxes [data-task=i] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task=i][type=checkbox]:checked {
   --checkbox-color: transparent;
   --checkbox-color-hover: transparent;
   border-width: 0;
@@ -6815,8 +6810,8 @@ Icons were taken from Font Awesome: https://fontawesome.com/
   left: calc(var(--checkbox-size) * 1);
   font-weight: bold;
 }
-.anp-custom-checkboxes [data-task=i] > input[type=checkbox]:checked,
-.anp-custom-checkboxes [data-task=i] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task=i][type=checkbox]:checked {
+.anp-custom-checkboxes [data-task=l] > input[type=checkbox]:checked,
+.anp-custom-checkboxes [data-task=l] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task=l][type=checkbox]:checked {
   --checkbox-color: transparent;
   --checkbox-color-hover: transparent;
   border-width: 0;
@@ -6836,8 +6831,8 @@ Icons were taken from Font Awesome: https://fontawesome.com/
   left: calc(var(--checkbox-size) * 1);
   font-weight: bold;
 }
-.anp-custom-checkboxes [data-task=l] > input[type=checkbox]:checked,
-.anp-custom-checkboxes [data-task=l] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task=l][type=checkbox]:checked {
+.anp-custom-checkboxes [data-task="*"] > input[type=checkbox]:checked,
+.anp-custom-checkboxes [data-task="*"] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task="*"][type=checkbox]:checked {
   --checkbox-color: transparent;
   --checkbox-color-hover: transparent;
   border-width: 0;
@@ -6857,8 +6852,8 @@ Icons were taken from Font Awesome: https://fontawesome.com/
   left: calc(var(--checkbox-size) * 1);
   font-weight: bold;
 }
-.anp-custom-checkboxes [data-task="*"] > input[type=checkbox]:checked,
-.anp-custom-checkboxes [data-task="*"] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task="*"][type=checkbox]:checked {
+.anp-custom-checkboxes [data-task=n] > input[type=checkbox]:checked,
+.anp-custom-checkboxes [data-task=n] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task=n][type=checkbox]:checked {
   --checkbox-color: transparent;
   --checkbox-color-hover: transparent;
   border-width: 0;
@@ -6878,8 +6873,8 @@ Icons were taken from Font Awesome: https://fontawesome.com/
   left: calc(var(--checkbox-size) * 1);
   font-weight: bold;
 }
-.anp-custom-checkboxes [data-task=n] > input[type=checkbox]:checked,
-.anp-custom-checkboxes [data-task=n] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task=n][type=checkbox]:checked {
+.anp-custom-checkboxes [data-task=S] > input[type=checkbox]:checked,
+.anp-custom-checkboxes [data-task=S] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task=S][type=checkbox]:checked {
   --checkbox-color: transparent;
   --checkbox-color-hover: transparent;
   border-width: 0;
@@ -6899,11 +6894,11 @@ Icons were taken from Font Awesome: https://fontawesome.com/
   left: calc(var(--checkbox-size) * 1);
   font-weight: bold;
 }
-.anp-custom-checkboxes [data-task=S] > input[type=checkbox]:checked,
-.anp-custom-checkboxes [data-task=S] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task=S][type=checkbox]:checked {
-  --checkbox-color: transparent;
-  --checkbox-color-hover: transparent;
-  border-width: 0;
+.anp-custom-checkboxes [data-task="/"] > input[type=checkbox]:checked,
+.anp-custom-checkboxes [data-task="/"] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task="/"][type=checkbox]:checked {
+  --checkbox-color: rgba(var(--ctp-subtext0), 0.3);
+  --checkbox-color-hover: rgba(var(--ctp-subtext0), 0.3);
+  border-color: rgb(var(--ctp-subtext0)) !important;
 }
 .anp-custom-checkboxes [data-task="/"] > input[type=checkbox]:checked:after,
 .anp-custom-checkboxes [data-task="/"] > p > input[type=checkbox]:checked:after, .anp-custom-checkboxes [data-task="/"][type=checkbox]:checked:after {
@@ -6917,11 +6912,11 @@ Icons were taken from Font Awesome: https://fontawesome.com/
   left: calc(var(--checkbox-size) * 1);
   font-weight: bold;
 }
-.anp-custom-checkboxes [data-task="/"] > input[type=checkbox]:checked,
-.anp-custom-checkboxes [data-task="/"] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task="/"][type=checkbox]:checked {
-  --checkbox-color: rgba(var(--ctp-subtext0), 0.3);
-  --checkbox-color-hover: rgba(var(--ctp-subtext0), 0.3);
-  border-color: rgb(var(--ctp-subtext0)) !important;
+.anp-custom-checkboxes [data-task="<"] > input[type=checkbox]:checked,
+.anp-custom-checkboxes [data-task="<"] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task="<"][type=checkbox]:checked {
+  --checkbox-color: transparent;
+  --checkbox-color-hover: transparent;
+  border-width: 0;
 }
 .anp-custom-checkboxes [data-task="<"] > input[type=checkbox]:checked:after,
 .anp-custom-checkboxes [data-task="<"] > p > input[type=checkbox]:checked:after, .anp-custom-checkboxes [data-task="<"][type=checkbox]:checked:after {
@@ -6938,8 +6933,8 @@ Icons were taken from Font Awesome: https://fontawesome.com/
   left: calc(var(--checkbox-size) * 1);
   font-weight: bold;
 }
-.anp-custom-checkboxes [data-task="<"] > input[type=checkbox]:checked,
-.anp-custom-checkboxes [data-task="<"] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task="<"][type=checkbox]:checked {
+.anp-custom-checkboxes [data-task=">"] > input[type=checkbox]:checked,
+.anp-custom-checkboxes [data-task=">"] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task=">"][type=checkbox]:checked {
   --checkbox-color: transparent;
   --checkbox-color-hover: transparent;
   border-width: 0;
@@ -6959,8 +6954,8 @@ Icons were taken from Font Awesome: https://fontawesome.com/
   left: calc(var(--checkbox-size) * 1);
   font-weight: bold;
 }
-.anp-custom-checkboxes [data-task=">"] > input[type=checkbox]:checked,
-.anp-custom-checkboxes [data-task=">"] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task=">"][type=checkbox]:checked {
+.anp-custom-checkboxes [data-task='"'] > input[type=checkbox]:checked,
+.anp-custom-checkboxes [data-task='"'] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task='"'][type=checkbox]:checked {
   --checkbox-color: transparent;
   --checkbox-color-hover: transparent;
   border-width: 0;
@@ -6980,8 +6975,8 @@ Icons were taken from Font Awesome: https://fontawesome.com/
   left: calc(var(--checkbox-size) * 1);
   font-weight: bold;
 }
-.anp-custom-checkboxes [data-task='"'] > input[type=checkbox]:checked,
-.anp-custom-checkboxes [data-task='"'] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task='"'][type=checkbox]:checked {
+.anp-custom-checkboxes [data-task=u] > input[type=checkbox]:checked,
+.anp-custom-checkboxes [data-task=u] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task=u][type=checkbox]:checked {
   --checkbox-color: transparent;
   --checkbox-color-hover: transparent;
   border-width: 0;
@@ -7001,8 +6996,8 @@ Icons were taken from Font Awesome: https://fontawesome.com/
   left: calc(var(--checkbox-size) * 1);
   font-weight: bold;
 }
-.anp-custom-checkboxes [data-task=u] > input[type=checkbox]:checked,
-.anp-custom-checkboxes [data-task=u] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task=u][type=checkbox]:checked {
+.anp-custom-checkboxes [data-task=d] > input[type=checkbox]:checked,
+.anp-custom-checkboxes [data-task=d] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task=d][type=checkbox]:checked {
   --checkbox-color: transparent;
   --checkbox-color-hover: transparent;
   border-width: 0;
@@ -7022,8 +7017,8 @@ Icons were taken from Font Awesome: https://fontawesome.com/
   left: calc(var(--checkbox-size) * 1);
   font-weight: bold;
 }
-.anp-custom-checkboxes [data-task=d] > input[type=checkbox]:checked,
-.anp-custom-checkboxes [data-task=d] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task=d][type=checkbox]:checked {
+.anp-custom-checkboxes [data-task=f] > input[type=checkbox]:checked,
+.anp-custom-checkboxes [data-task=f] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task=f][type=checkbox]:checked {
   --checkbox-color: transparent;
   --checkbox-color-hover: transparent;
   border-width: 0;
@@ -7043,8 +7038,8 @@ Icons were taken from Font Awesome: https://fontawesome.com/
   left: calc(var(--checkbox-size) * 1);
   font-weight: bold;
 }
-.anp-custom-checkboxes [data-task=f] > input[type=checkbox]:checked,
-.anp-custom-checkboxes [data-task=f] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task=f][type=checkbox]:checked {
+.anp-custom-checkboxes [data-task=k] > input[type=checkbox]:checked,
+.anp-custom-checkboxes [data-task=k] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task=k][type=checkbox]:checked {
   --checkbox-color: transparent;
   --checkbox-color-hover: transparent;
   border-width: 0;
@@ -7064,8 +7059,8 @@ Icons were taken from Font Awesome: https://fontawesome.com/
   left: calc(var(--checkbox-size) * 1);
   font-weight: bold;
 }
-.anp-custom-checkboxes [data-task=k] > input[type=checkbox]:checked,
-.anp-custom-checkboxes [data-task=k] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task=k][type=checkbox]:checked {
+.anp-custom-checkboxes [data-task=w] > input[type=checkbox]:checked,
+.anp-custom-checkboxes [data-task=w] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task=w][type=checkbox]:checked {
   --checkbox-color: transparent;
   --checkbox-color-hover: transparent;
   border-width: 0;
@@ -7084,12 +7079,6 @@ Icons were taken from Font Awesome: https://fontawesome.com/
   position: absolute;
   left: calc(var(--checkbox-size) * 1);
   font-weight: bold;
-}
-.anp-custom-checkboxes [data-task=w] > input[type=checkbox]:checked,
-.anp-custom-checkboxes [data-task=w] > p > input[type=checkbox]:checked, .anp-custom-checkboxes [data-task=w][type=checkbox]:checked {
-  --checkbox-color: transparent;
-  --checkbox-color-hover: transparent;
-  border-width: 0;
 }
 
 .anp-custom-checkboxes-labels [data-task="!"] input[type=checkbox]:checked:before, .anp-custom-checkboxes-labels [data-task="!"][type=checkbox]:checked:before {
@@ -7226,6 +7215,7 @@ Icons were taken from Font Awesome: https://fontawesome.com/
 .theme-dark.anp-speech-bubble [data-task="8"],
 .theme-dark.anp-speech-bubble [data-task="9"] {
   --text-normal: var(--background-primary);
+  transition: background-color 0.2s, background 0.2s, border-radius 0.2s;
 }
 .theme-dark.anp-speech-bubble [data-task="0"]::selection,
 .theme-dark.anp-speech-bubble [data-task="1"]::selection,
@@ -7239,18 +7229,6 @@ Icons were taken from Font Awesome: https://fontawesome.com/
 .theme-dark.anp-speech-bubble [data-task="9"]::selection {
   background-color: rgba(var(--ctp-crust), 0.2);
   background: rgba(var(--ctp-crust), 0.2);
-}
-.theme-dark.anp-speech-bubble [data-task="0"],
-.theme-dark.anp-speech-bubble [data-task="1"],
-.theme-dark.anp-speech-bubble [data-task="2"],
-.theme-dark.anp-speech-bubble [data-task="3"],
-.theme-dark.anp-speech-bubble [data-task="4"],
-.theme-dark.anp-speech-bubble [data-task="5"],
-.theme-dark.anp-speech-bubble [data-task="6"],
-.theme-dark.anp-speech-bubble [data-task="7"],
-.theme-dark.anp-speech-bubble [data-task="8"],
-.theme-dark.anp-speech-bubble [data-task="9"] {
-  transition: background-color 0.2s, background 0.2s, border-radius 0.2s;
 }
 
 .anp-speech-bubble .is-live-preview [data-task="0"].cm-active,
@@ -7876,6 +7854,9 @@ None of the original code was used and the feature was implemented from scratch.
 .setting-item:is([data-id*=anuppuccin-theme-settings]) > .setting-item-info > .setting-item-name {
   margin-left: -3px;
 }
+.setting-item:is([data-id*=anuppuccin-theme-settings]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
+  margin-right: 4px;
+}
 .setting-item:is([data-id*=anuppuccin-theme-settings]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: contain;
@@ -7891,15 +7872,15 @@ None of the original code was used and the feature was implemented from scratch.
   vertical-align: text-top;
   margin-right: 0;
 }
-.setting-item:is([data-id*=anuppuccin-theme-settings]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
-  margin-right: 4px;
-}
 .setting-item:is([data-id*=anuppuccin-theme-settings]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator > svg {
   display: none;
 }
 
 .setting-item:is([data-id*=anuppuccin-theme-settings-extended]) > .setting-item-info > .setting-item-name {
   margin-left: -3px;
+}
+.setting-item:is([data-id*=anuppuccin-theme-settings-extended]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
+  margin-right: 4px;
 }
 .setting-item:is([data-id*=anuppuccin-theme-settings-extended]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
   -webkit-mask-repeat: no-repeat;
@@ -7916,15 +7897,15 @@ None of the original code was used and the feature was implemented from scratch.
   vertical-align: text-top;
   margin-right: 0;
 }
-.setting-item:is([data-id*=anuppuccin-theme-settings-extended]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
-  margin-right: 4px;
-}
 .setting-item:is([data-id*=anuppuccin-theme-settings-extended]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator > svg {
   display: none;
 }
 
 .setting-item:is([data-id*=anp-colors-section-header]) > .setting-item-info > .setting-item-name {
   margin-left: -3px;
+}
+.setting-item:is([data-id*=anp-colors-section-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
+  margin-right: 4px;
 }
 .setting-item:is([data-id*=anp-colors-section-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
   -webkit-mask-repeat: no-repeat;
@@ -7941,15 +7922,15 @@ None of the original code was used and the feature was implemented from scratch.
   vertical-align: text-top;
   margin-right: 0;
 }
-.setting-item:is([data-id*=anp-colors-section-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
-  margin-right: 4px;
-}
 .setting-item:is([data-id*=anp-colors-section-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator > svg {
   display: none;
 }
 
 .setting-item:is([data-id*=anp-editor-header]) > .setting-item-info > .setting-item-name {
   margin-left: -3px;
+}
+.setting-item:is([data-id*=anp-editor-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
+  margin-right: 4px;
 }
 .setting-item:is([data-id*=anp-editor-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
   -webkit-mask-repeat: no-repeat;
@@ -7966,15 +7947,15 @@ None of the original code was used and the feature was implemented from scratch.
   vertical-align: text-top;
   margin-right: 0;
 }
-.setting-item:is([data-id*=anp-editor-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
-  margin-right: 4px;
-}
 .setting-item:is([data-id*=anp-editor-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator > svg {
   display: none;
 }
 
 .setting-item:is([data-id*=anp-preview-header]) > .setting-item-info > .setting-item-name {
   margin-left: -3px;
+}
+.setting-item:is([data-id*=anp-preview-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
+  margin-right: 4px;
 }
 .setting-item:is([data-id*=anp-preview-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
   -webkit-mask-repeat: no-repeat;
@@ -7991,15 +7972,15 @@ None of the original code was used and the feature was implemented from scratch.
   vertical-align: text-top;
   margin-right: 0;
 }
-.setting-item:is([data-id*=anp-preview-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
-  margin-right: 4px;
-}
 .setting-item:is([data-id*=anp-preview-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator > svg {
   display: none;
 }
 
 .setting-item:is([data-id*=anp-plugin-header]) > .setting-item-info > .setting-item-name {
   margin-left: -3px;
+}
+.setting-item:is([data-id*=anp-plugin-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
+  margin-right: 4px;
 }
 .setting-item:is([data-id*=anp-plugin-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
   -webkit-mask-repeat: no-repeat;
@@ -8016,15 +7997,15 @@ None of the original code was used and the feature was implemented from scratch.
   vertical-align: text-top;
   margin-right: 0;
 }
-.setting-item:is([data-id*=anp-plugin-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
-  margin-right: 4px;
-}
 .setting-item:is([data-id*=anp-plugin-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator > svg {
   display: none;
 }
 
 .setting-item:is([data-id*=anp-misc-element-header]) > .setting-item-info > .setting-item-name {
   margin-left: -3px;
+}
+.setting-item:is([data-id*=anp-misc-element-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
+  margin-right: 4px;
 }
 .setting-item:is([data-id*=anp-misc-element-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
   -webkit-mask-repeat: no-repeat;
@@ -8041,15 +8022,15 @@ None of the original code was used and the feature was implemented from scratch.
   vertical-align: text-top;
   margin-right: 0;
 }
-.setting-item:is([data-id*=anp-misc-element-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
-  margin-right: 4px;
-}
 .setting-item:is([data-id*=anp-misc-element-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator > svg {
   display: none;
 }
 
 .setting-item:is([data-id*=anp-show-hide-elements-header]) > .setting-item-info > .setting-item-name {
   margin-left: -3px;
+}
+.setting-item:is([data-id*=anp-show-hide-elements-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
+  margin-right: 4px;
 }
 .setting-item:is([data-id*=anp-show-hide-elements-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
   -webkit-mask-repeat: no-repeat;
@@ -8066,15 +8047,15 @@ None of the original code was used and the feature was implemented from scratch.
   vertical-align: text-top;
   margin-right: 0;
 }
-.setting-item:is([data-id*=anp-show-hide-elements-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
-  margin-right: 4px;
-}
 .setting-item:is([data-id*=anp-show-hide-elements-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator > svg {
   display: none;
 }
 
 .setting-item:is([data-id*=anp-typography-header]) > .setting-item-info > .setting-item-name {
   margin-left: -3px;
+}
+.setting-item:is([data-id*=anp-typography-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
+  margin-right: 4px;
 }
 .setting-item:is([data-id*=anp-typography-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
   -webkit-mask-repeat: no-repeat;
@@ -8091,15 +8072,15 @@ None of the original code was used and the feature was implemented from scratch.
   vertical-align: text-top;
   margin-right: 0;
 }
-.setting-item:is([data-id*=anp-typography-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
-  margin-right: 4px;
-}
 .setting-item:is([data-id*=anp-typography-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator > svg {
   display: none;
 }
 
 .setting-item:is([data-id*=anp-workspace-header]) > .setting-item-info > .setting-item-name {
   margin-left: -3px;
+}
+.setting-item:is([data-id*=anp-workspace-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
+  margin-right: 4px;
 }
 .setting-item:is([data-id*=anp-workspace-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
   -webkit-mask-repeat: no-repeat;
@@ -8116,15 +8097,15 @@ None of the original code was used and the feature was implemented from scratch.
   vertical-align: text-top;
   margin-right: 0;
 }
-.setting-item:is([data-id*=anp-workspace-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
-  margin-right: 4px;
-}
 .setting-item:is([data-id*=anp-workspace-header]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator > svg {
   display: none;
 }
 
 .setting-item:is([data-id*=anuppuccin-support]) > .setting-item-info > .setting-item-name {
   margin-left: -3px;
+}
+.setting-item:is([data-id*=anuppuccin-support]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
+  margin-right: 4px;
 }
 .setting-item:is([data-id*=anuppuccin-support]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
   -webkit-mask-repeat: no-repeat;
@@ -8141,15 +8122,15 @@ None of the original code was used and the feature was implemented from scratch.
   vertical-align: text-top;
   margin-right: 0;
 }
-.setting-item:is([data-id*=anuppuccin-support]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
-  margin-right: 4px;
-}
 .setting-item:is([data-id*=anuppuccin-support]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator > svg {
   display: none;
 }
 
 .setting-item:is([data-id*=anp-custom-rainbow-colors]) > .setting-item-info > .setting-item-name {
   margin-left: -3px;
+}
+.setting-item:is([data-id*=anp-custom-rainbow-colors]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
+  margin-right: 4px;
 }
 .setting-item:is([data-id*=anp-custom-rainbow-colors]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
   -webkit-mask-repeat: no-repeat;
@@ -8165,9 +8146,6 @@ None of the original code was used and the feature was implemented from scratch.
   transition: transform 0.1s;
   vertical-align: text-top;
   margin-right: 0;
-}
-.setting-item:is([data-id*=anp-custom-rainbow-colors]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
-  margin-right: 4px;
 }
 .setting-item:is([data-id*=anp-custom-rainbow-colors]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator > svg {
   display: none;
@@ -8390,14 +8368,14 @@ None of the original code was used and the feature was implemented from scratch.
   gap: 10px;
 }
 
+#cMenuModalBar {
+  border: 2px solid rgba(var(--ctp-crust), 0.2);
+}
 #cMenuModalBar .cMenuCommandItem {
   background-color: rgba(var(--ctp-mantle), 0.4);
 }
 #cMenuModalBar .cMenuCommandItem:hover {
   background-color: rgba(var(--ctp-mantle), 0.6);
-}
-#cMenuModalBar {
-  border: 2px solid rgba(var(--ctp-crust), 0.2);
 }
 
 #cMenuModalBar button.cMenuCommandItem:hover {
@@ -8438,11 +8416,11 @@ None of the original code was used and the feature was implemented from scratch.
   margin: auto;
 }
 
-.calendar .day.svelte-q3wqg9:hover {
-  background-color: rgb(var(--ctp-crust));
-}
 .calendar .day.svelte-q3wqg9 {
   transition: background-color 0.1s;
+}
+.calendar .day.svelte-q3wqg9:hover {
+  background-color: rgb(var(--ctp-crust));
 }
 
 .cMenuToolbarDefaultAesthetic {
@@ -9100,5 +9078,3 @@ body:not(.is-mobile):not(.anp-hide-status-bar) .kanban-plugin__board > div {
   background-color: transparent;
   color: inherit;
 }
-
-/*# sourceMappingURL=theme.css.map */
