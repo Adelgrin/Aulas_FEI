@@ -16,7 +16,7 @@ As funções funcionam da seguinte forma-> Mãe(Andreia,Carlos)
 * alguns alunos tiveram aula de frances em 2010
   * $\exists x, Aluno(x) \wedge Aluno(x,Frances) \wedge AnoAula(Frances,2010)$
 * todos os alunos que tiveram aula de frances passaram
-  * $\forall x, Aluno(y) \wedge Aluno(y,Frances) \Rarr Aprovado(x) $
+  * $\forall x, Aluno(y) \wedge Aluno(y,Frances) \Rightarrow Aprovado(x)$
 * Somente um aluno teve aula de grego em 2010
   * $\exists x, Aluno(x) \wedge Aluno(x,Frances) \wedge AnoAula(Frances,2010)$
   * $Aluno(Fulano) \wedge Aula(Fulano,Grego) \wedge AnoAula(Grego,2010)$
