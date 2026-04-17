@@ -25,8 +25,8 @@ As funções funcionam da seguinte forma-> Mãe(Andreia,Carlos)
 
 ## Transformação para CNF:
 
-![](imagens/59OxY9b-dVCnVAd_LtVcEi4hF1bX9enOPG59_MhYK8g=.png)
+![](../imagens/59OxY9b-dVCnVAd_LtVcEi4hF1bX9enOPG59_MhYK8g=.png)
 
 ## Solução de uma LPO:
 
-![](imagens/S3IU3Wh06gwk4uI8_pZKZmN68hzuXllQaJum6e_wqBw=.png)
+![](../imagens/S3IU3Wh06gwk4uI8_pZKZmN68hzuXllQaJum6e_wqBw=.png)
