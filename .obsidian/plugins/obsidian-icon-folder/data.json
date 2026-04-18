@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiGamepad2",
       "LiAtom",
       "LiComputer",
       "🤖",
-      "LiArchiveRestore",
-      "LiAlbum"
+      "LiArchiveRestore"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -38,5 +38,6 @@
   "TCC": "LiAlbum",
   "Sistemas Distribuídos": "LiArchiveRestore",
   "Inteligência artificial": "LiAtom",
-  "Gestão de projetos de software": "LiComputer"
+  "Gestão de projetos de software": "LiComputer",
+  "Desenvolvimento de jogos": "LiGamepad2"
 }
