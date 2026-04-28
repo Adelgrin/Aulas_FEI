@@ -13,24 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Gestão de projetos de software/aulas/5 Monitoramento e controle de projeto.md",
+                "file": "Sistemas Distribuídos/aulas/8 Consistência e replicas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5 Monitoramento e controle de projeto"
+              "title": "8 Consistência e replicas"
             }
           },
           {
-            "id": "c3138b79da232038",
+            "id": "3b2d46039acaf4c2",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Gestão de projetos de software/imagens/Pasted image 20260418111411.png"
+                "file": "Tópicos avançados de engenharia de software/aulas/4 Design de um serviço.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20260418111411"
+              "icon": "lucide-file",
+              "title": "4 Design de um serviço"
             }
           }
         ]
@@ -207,20 +209,23 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "552d3aa79c489ed4",
+  "active": "d54a6f5933af2159",
   "lastOpenFiles": [
+    "Sistemas Distribuídos/aulas/7 Exclusão mutua.md",
+    "Sistemas Distribuídos/aulas/8 Consistência e replicas.md",
+    "Tópicos avançados de engenharia de software/aulas/4 Design de um serviço.md",
+    "Tópicos avançados de engenharia de software/aulas/5 Construção.md",
+    "Sistemas Distribuídos/aulas/6 Mensageria.md",
+    "Sistemas Distribuídos/projeto/parte3.md",
+    "Gestão de projetos de software/aulas/5 Monitoramento e controle de projeto.md",
     "Gestão de projetos de software/imagens/Pasted image 20260418111411.png",
     "Pasted image 20260418105215.png",
-    "Gestão de projetos de software/aulas/5 Monitoramento e controle de projeto.md",
     "Gestão de projetos de software/imagens/Pasted image 20260418100033.png",
     "Pasted image 20260418100023.png",
-    "Tópicos avançados de engenharia de software/aulas/5 Construção.md",
     "Gestão de projetos de software/aulas/4 gerenciamento de tempo.md",
-    "Sistemas Distribuídos/projeto/parte3.md",
     "Tópicos avançados de engenharia de software/aulas/5 Construção.md~",
     "TCC/algoritimos.md",
     "TCC/Índice TCC.md",
-    "Tópicos avançados de engenharia de software/aulas/4 Design de um serviço.md",
     "Tópicos avançados de engenharia de software/imagens/Pasted image 20260414214710.png",
     "Tópicos avançados de engenharia de software/Indice.md",
     "Gestão de projetos de software/Índice Gestão de projetos.md",
@@ -238,8 +243,6 @@
     "Inteligência artificial/aulas/10 Redes Neurais.md",
     "Inteligência artificial/aulas/9 Algorítimos genéticos.md",
     "Inteligência artificial/aulas/8 Lógica e sistemas fuzzy.md",
-    "Inteligência artificial/aulas/7 Aprendizado indutivo.md",
-    "Inteligência artificial/aulas/4 Mecanismos de Busca.md",
     "Desenvolvimento de jogos/Indice",
     "Desenvolvimento de jogos",
     "Inteligência artificial/aulas/9 Algorítimos genéticos.md~",
