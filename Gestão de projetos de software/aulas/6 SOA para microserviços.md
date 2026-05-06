@@ -1,1 +1,0 @@
-A evolução do SOA para microserviços se deu a necessidade de granunalizar os processos, para uma melhor integração entre processos atuais e futuros
