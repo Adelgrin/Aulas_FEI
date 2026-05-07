@@ -11,3 +11,19 @@ ser desenvolvido separadamente
 implantado separadamente
 escalação separadamente
 ter próprio banco de dados
+
+## Dominio
+## Bouded context
+Fronteira logica de um modelo, termos carregam um unico significado
+
+## Linguagem Ubiqua
+Termo comum entre todas as partes responsaveis pelo sistema
+
+## Context Map
+Mapeamento entre as relacoes de bounded context
+conta com os padroes
+*  Cliente/ fornecedor
+* Conformista
+* ACL anti corruption layer
+* shared kernel
+* Partnership
