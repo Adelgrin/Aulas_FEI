@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Gestão de projetos de software/aulas/6 SOA (Service Oriented Archtecture) para microserviços.md",
+                "file": "Tópicos avançados de engenharia de software/aulas/6 Linhas de produtos de software.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "6 SOA (Service Oriented Archtecture) para microserviços"
+              "title": "6 Linhas de produtos de software"
             }
           },
           {
@@ -211,8 +211,10 @@
   },
   "active": "d54a6f5933af2159",
   "lastOpenFiles": [
-    "Tópicos avançados de engenharia de software/diagrama do serviço de notificação.md",
+    "Sistemas Distribuídos/projeto/parte5.md",
+    "Tópicos avançados de engenharia de software/aulas/6 Linhas de produtos de software.md",
     "Gestão de projetos de software/aulas/6 SOA (Service Oriented Archtecture) para microserviços.md",
+    "Tópicos avançados de engenharia de software/diagrama do serviço de notificação.md",
     "Tópicos avançados de engenharia de software/aulas/5 Construção.md",
     "Sistemas Distribuídos/aulas/8 Consistência e replicas.md",
     "Sistemas Distribuídos/aulas/7 Exclusão mutua.md",
@@ -241,8 +243,6 @@
     "Tópicos avançados de engenharia de software/aulas/2 Reuso de software.md",
     "Tópicos avançados de engenharia de software/aulas/1 Introdução matéria.md",
     "Inteligência artificial/aulas/1 Introdução.md",
-    "Inteligência artificial/aulas/11 Redes neurais avançadas.md",
-    "Inteligência artificial/aulas/10 Redes Neurais.md",
     "Desenvolvimento de jogos/Indice",
     "Desenvolvimento de jogos",
     "Inteligência artificial/aulas/9 Algorítimos genéticos.md~",
