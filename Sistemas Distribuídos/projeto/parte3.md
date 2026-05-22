@@ -9,7 +9,7 @@ Uma vez que servidores e bots estão funcionando, podemos adicionar os relógios
 O relógio lógico deverá ser implementado tanto no cliente/bot como no servidor. Para isto será usado um contador que iniciará junto com o processo e deve seguir a proposta, conforme apresentada em aula:
 
 1. o contador deve ser incrementado antes do envio de cada mensagem e deve ser enviado junto com a mensagem
-2. quando uma mensagem for recebida, o processo deve comparar o seu contador com o que foi recebido na mensagem e usar como novo valor de seu contador o máximo entre o valor recebido na mensagem e o valor que possuia
+2. quando uma mensagem for recebida, o processo deve comparar o seu contador com o que foi recebido na mensagem e usar como novo valor de seu contador o máximo entre o valor recebido na mensagem e o valor que possuía
 
 Portanto, todas as mensagens que foram trocadas devem possuir além do timestamp, o valor do contador de quem envia a mensagem.
 
@@ -36,7 +36,7 @@ sequenceDiagram
   Referência ->> Servidor: REP: [lista com nomes e ranks]
 ```
 
-1. atualizar a lista de servidores conforme a disponibilidade (heartbeat): cada servidor deve enviar periodicamente (a cada 10 mesnagens de clientes recebidas) uma mensagem a este processo avisando que ainda está funcionando para ser mantido na lista de servidores. Caso o servidor não envie esta mensagem de heartbeat, o serviço deve remover o servidor da lista de servidores disponíveis.
+1. atualizar a lista de servidores conforme a disponibilidade (heartbeat): cada servidor deve enviar periodicamente (a cada 10 mensagens de clientes recebidas) uma mensagem a este processo avisando que ainda está funcionando para ser mantido na lista de servidores. Caso o servidor não envie esta mensagem de heartbeat, o serviço deve remover o servidor da lista de servidores disponíveis.
 
 ```mermaid
 sequenceDiagram
@@ -44,7 +44,7 @@ sequenceDiagram
   Referência ->> Servidor: REP: OK
 ```
 
-1. atualizar o relógio do servidor: aproveitando a mensagem de heartbeat, o servidor tabém deverá pedir a hora correta para o serviço de referência.
+1. atualizar o relógio do servidor: aproveitando a mensagem de heartbeat, o servidor também deverá pedir a hora correta para o serviço de referência.
 
 ## Entrega
 
