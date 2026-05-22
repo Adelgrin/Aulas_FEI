@@ -12,7 +12,8 @@ garantir consistência pela ordem
 um data store é uma coleção de storages distribuídos
 ## Tipos de consistência
 * Sequencial
-		resultado de qualquer execução
+		resultado de qualquer execução é o mesmo que todos os processos fossem executados em ordem
 * Linearização
-		cada operação parece que foi execudada de forma intantânea
+		cada operação parece que foi executada de forma instantânea
 * Consistência causal
+		Escritas que podem ter relações causais entre processos devem ser vistas na mesma ordem entre processos

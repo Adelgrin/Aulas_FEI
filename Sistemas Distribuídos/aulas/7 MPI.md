@@ -1,0 +1,1 @@
+O conceito do MPI (Message Passing Interface) consiste em ranquear cada servidor, isso é, cada servidor recebe um valor de indice para que possa trabalhar desta forma transferindo as mensagens como for programado
