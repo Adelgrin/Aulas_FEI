@@ -1,5 +1,5 @@
 Sistemas dependem de concorrência e colaboração, 
-Necessario garantir tratamento de:
+Necessário garantir tratamento de:
 * concorrência
 
 ## Tipos existentes
