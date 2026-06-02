@@ -9,8 +9,9 @@ Exemplo usado no projeto:
 **Este modelo permite que o usuário/comprador do software utilize apenas as features necessárias**
 
 ## DDD
-Domain driven design
+>[!Domain driven design]
 Busca modelar um software com uma modelagem clara
+
 **Modelagem Estratégica**
 * Dominios e subdominios
 * Bounded context

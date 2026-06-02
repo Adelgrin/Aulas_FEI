@@ -170,13 +170,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Gestão de projetos de software/aulas/5 Monitoramento e controle de projeto.md",
+                "file": "Tópicos avançados de engenharia de software/Resumo P2.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 5 Monitoramento e controle de projeto"
+              "title": "Outline of Resumo P2"
             }
           },
           {
@@ -209,13 +209,20 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "95acad85643776a4",
+  "active": "552d3aa79c489ed4",
   "lastOpenFiles": [
+    "Tópicos avançados de engenharia de software/imagens/Pasted image 20260602173847.png",
+    "conflict-files-obsidian-git.md",
+    "Tópicos avançados de engenharia de software/Resumo P2.md",
+    "Sistemas Distribuídos/imagens/Pasted image 20260522172659.png",
+    "Sistemas Distribuídos/aulas/9 Exclusão mutua.md",
+    "Sistemas Distribuídos/aulas/8 Concorrencia e sincronização.md",
+    "Sistemas Distribuídos/aulas/7 MPI.md",
+    "Sistemas Distribuídos/aulas/10 Consistência e replicas.md",
     "Tópicos avançados de engenharia de software/imagens/Pasted image 20260602144541.png",
     "Tópicos avançados de engenharia de software/imagens/Pasted image 20260602144436.png",
     "Tópicos avançados de engenharia de software/aulas/5 Construção.md",
     "Tópicos avançados de engenharia de software/aulas/6 Linhas de produtos de software.md",
-    "Tópicos avançados de engenharia de software/Resumo P2.md",
     "Tópicos avançados de engenharia de software/aulas/4 Design de um serviço.md",
     "Sistemas Distribuídos/aulas/8 Consistência e replicas.md",
     "Sistemas Distribuídos/aulas/7 Exclusão mutua.md",
@@ -239,11 +246,6 @@
     "Gestão de projetos de software/Índice Gestão de projetos.md",
     "Inteligência artificial/Indice.md",
     "Sistemas Distribuídos/projeto/enunciado.md",
-    "Sistemas Distribuídos/projeto/parte1.md",
-    "Tópicos avançados de engenharia de software/labs/Inicio de projeto.md",
-    "Tópicos avançados de engenharia de software/labs/Escolhas de reuso de software.md",
-    "Tópicos avançados de engenharia de software/aulas/3 ESBC.md",
-    "Tópicos avançados de engenharia de software/aulas/2 Reuso de software.md",
     "Desenvolvimento de jogos/Indice",
     "Desenvolvimento de jogos",
     "Inteligência artificial/aulas/9 Algorítimos genéticos.md~",
@@ -252,8 +254,6 @@
     "Inteligência artificial/aulas/10 Redes Neurais.md~",
     "Inteligência artificial/imagens/-qFhU8uALD5xUJqFHtWmJEE44hkApXRFVo4yo0mGzIo=.png",
     "Inteligência artificial/imagens/zJAzPReVTfiV_cBXqNE3hsxVu-kDm2dqBThz0CSN3Eo=.png",
-    "Inteligência artificial/aulas/11 Redes neurais avançadas/assets/zJAzPReVTfiV_cBXqNE3hsxVu-kDm2dqBThz0CSN3Eo=.png",
-    "Inteligência artificial/aulas/11 Redes neurais avançadas/assets/-qFhU8uALD5xUJqFHtWmJEE44hkApXRFVo4yo0mGzIo=.png",
     "Inteligência artificial/aulas/11 Redes neurais avançadas/assets",
     "Inteligência artificial/aulas/11 Redes neurais avançadas",
     "Inteligência artificial/aulas/10 Redes neurais/assets"
