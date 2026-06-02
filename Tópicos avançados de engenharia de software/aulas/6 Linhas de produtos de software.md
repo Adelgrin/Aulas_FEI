@@ -3,5 +3,10 @@ Consiste em desenvolver um software baseado em reuso de software anteriormente i
 
 ## Componentes principais
 * Núcleo 
-* Vareabilidade
+* Variabilidade
 * Produtos derivados
+
+>[!LPS garante:]
+>* Reuso
+>* Padronização
+>* Agilidade
