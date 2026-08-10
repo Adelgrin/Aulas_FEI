@@ -21,5 +21,5 @@ $$
 
 # Cronograma:
 
-![](imagens/ODHnsR2AuvCICpocLjF7OK8ddRJWekkzCrWrScn1qug=.png)
+![](ODHnsR2AuvCICpocLjF7OK8ddRJWekkzCrWrScn1qug=.png)
 

@@ -12,5 +12,5 @@ sendo elas:
 Consiste em sicronizar o relogio baseado no tempo de delay do envio da mensagem
 > [!Este relogio não utiliza tempo real e sim tempo passado]
 Exemplo:
-![[../imagens/Pasted image 20260522172659.png]]
+![[Pasted image 20260522172659.png]]
 Neste exemplo ele acrescente +1 no final do tempo anterior 

@@ -16,7 +16,7 @@ $$
 
 # Cronograma:
 
-![](imagens/RCSwSvpazw2f6vdU-38y0kKULc9gS2xi6NdyVWhe4_c=.png)
+![](RCSwSvpazw2f6vdU-38y0kKULc9gS2xi6NdyVWhe4_c=.png)
 # Cronograma Laboratório:
 
-![](imagens/vUF6xX4H_c1db0hr6Msj6adI60iLWzTGVEmXZl0MGKc=.png)
+![](vUF6xX4H_c1db0hr6Msj6adI60iLWzTGVEmXZl0MGKc=.png)

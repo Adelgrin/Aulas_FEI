@@ -4,8 +4,8 @@ Consiste em criar um software modular que pode ser vendido ou desenvolvido com m
 
 Estes módulos (features) São obrigatórios, opcionais, alternativos ou alternativos
 Exemplo usado no projeto:
-![[../Pasted image 20260602144436.png]]
-![[../Pasted image 20260602144541.png]]
+![[Pasted image 20260602144436.png]]
+![[Pasted image 20260602144541.png]]
 **Este modelo permite que o usuário/comprador do software utilize apenas as features necessárias**
 
 ## DDD
@@ -44,4 +44,4 @@ Define cada um dos contextos definidos, quais são os bounded context, e interli
 	Teste o fluxo completo de um sistema de serviços
 
 **as fases do ciclo de vida de software orientado a serviço funcionam da seguinte forma:**
-![[../Pasted image 20260602173847.png]]
+![[Pasted image 20260602173847.png]]

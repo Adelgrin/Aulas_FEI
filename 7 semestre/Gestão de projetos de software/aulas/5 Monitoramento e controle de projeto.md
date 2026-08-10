@@ -46,7 +46,7 @@ Estimativa\ no\ termino = \dfrac{Orçamento\ Total planejado}{IDC}
 $$
 ### Ágil
 #### Burndown
-![[../imagens/Pasted image 20260418111411.png]]
+![[Pasted image 20260418111411.png]]
 	Gráfico que acompanha a sprint por pontos de história
 O objetivo é esgotar os pontos de história alcançando 0 ao final do projeto
 #### Velocity

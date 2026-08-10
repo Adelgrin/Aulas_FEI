@@ -19,4 +19,4 @@ $$
 
 # Cronograma: 
 
-![](imagens/5YvFazUxdE7GgLHCMb_tRpB-W1eGEE5svZwcnOxydms=.png)
+![](5YvFazUxdE7GgLHCMb_tRpB-W1eGEE5svZwcnOxydms=.png)

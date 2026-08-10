@@ -18,8 +18,8 @@ $$
 
 # Cronograma geral:
 
-![](imagens/37n1ZZrX52_gUBGfYD5MTxFxqaiQvsPXXphIr5JvCEQ=.png)
+![](37n1ZZrX52_gUBGfYD5MTxFxqaiQvsPXXphIr5JvCEQ=.png)
 
 # Cronogramas de laboratório:
 
-![](imagens/4fPt5Ckr9at2m84cenNnKf6k3doaw_ZQY7Q-cVgfWfI=.png)
+![](4fPt5Ckr9at2m84cenNnKf6k3doaw_ZQY7Q-cVgfWfI=.png)
