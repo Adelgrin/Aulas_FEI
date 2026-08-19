@@ -34,10 +34,5 @@
     "debugMode": false,
     "useInternalPlugins": false
   },
-  "7 semestre/Tópicos avançados de engenharia de software": "LiAxe",
-  "7 semestre/Desenvolvimento de jogos": "LiGamepad2",
-  "7 semestre/Gestão de projetos de software": "LiComputer",
-  "7 semestre/Inteligência artificial": "LiAtom",
-  "7 semestre/Sistemas Distribuídos": "LiArchiveRestore",
-  "7 semestre/TCC": "LiAlbum"
+  "Desenvolvimento de jogos": "LiGamepad2"
 }
