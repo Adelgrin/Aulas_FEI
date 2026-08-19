@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "7 semestre/Tópicos avançados de engenharia de software/Resumo P2.md",
+                "file": "8 semestre/Gestão de TI/Aula 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Resumo P2"
+              "title": "Aula 1"
             }
           }
         ]
@@ -41,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -195,12 +197,19 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "95acad85643776a4",
+  "active": "d54a6f5933af2159",
   "lastOpenFiles": [
+    "8 semestre/Emprededorismo e inovacao/Aula 1.md",
+    "8 semestre/Gestão de TI/Aula 1.md",
+    "8 semestre/Gestão de TI",
+    "7 semestre/Tópicos avançados de engenharia de software/Resumo P2.md",
+    "8 semestre/Emprededorismo e inovacao",
+    "8 semestre/Simulação e testes de software/Aula 0.md",
+    "8 semestre/Simulação e testes de software",
+    "8 semestre",
     "7 semestre",
     "7 semestre/Tópicos avançados de engenharia de software/aulas/5 Construção.md",
     "7 semestre/Sistemas Distribuídos/aulas/10 Consistência e replicas.md",
-    "7 semestre/Tópicos avançados de engenharia de software/Resumo P2.md",
     "7 semestre/Tópicos avançados de engenharia de software/imagens/Pasted image 20260602173847.png",
     "conflict-files-obsidian-git.md",
     "7 semestre/Sistemas Distribuídos/imagens/Pasted image 20260522172659.png",
@@ -231,17 +240,10 @@
     "7 semestre/Tópicos avançados de engenharia de software/imagens/Pasted image 20260414214710.png",
     "7 semestre/Tópicos avançados de engenharia de software/Indice.md",
     "7 semestre/Gestão de projetos de software/Índice Gestão de projetos.md",
-    "7 semestre/Inteligência artificial/Indice.md",
-    "7 semestre/Sistemas Distribuídos/projeto/enunciado.md",
     "Desenvolvimento de jogos/Indice",
     "7 semestre/Desenvolvimento de jogos",
     "Inteligência artificial/aulas/9 Algorítimos genéticos.md~",
     "Inteligência artificial/aulas/8 Lógica e sistemas fuzzy.md~",
-    "Inteligência artificial/aulas/11 Redes neurais avançadas.md~",
-    "Inteligência artificial/aulas/10 Redes Neurais.md~",
-    "7 semestre/Inteligência artificial/imagens/-qFhU8uALD5xUJqFHtWmJEE44hkApXRFVo4yo0mGzIo=.png",
-    "Inteligência artificial/aulas/11 Redes neurais avançadas/assets",
-    "Inteligência artificial/aulas/11 Redes neurais avançadas",
-    "Inteligência artificial/aulas/10 Redes neurais/assets"
+    "7 semestre/Inteligência artificial/imagens/-qFhU8uALD5xUJqFHtWmJEE44hkApXRFVo4yo0mGzIo=.png"
   ]
 }

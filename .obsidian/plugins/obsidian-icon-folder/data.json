@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiAlbum",
+      "LiTestTubes",
       "LiGamepad2",
       "LiAtom",
-      "LiComputer",
-      "🤖",
-      "LiArchiveRestore"
+      "LiComputer"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -39,5 +39,8 @@
   "7 semestre/Gestão de projetos de software": "LiComputer",
   "7 semestre/Inteligência artificial": "LiAtom",
   "7 semestre/Sistemas Distribuídos": "LiArchiveRestore",
-  "7 semestre/TCC": "LiAlbum"
+  "7 semestre/TCC": "LiAlbum",
+  "8 semestre/Simulação e testes de software": "LiTestTubes",
+  "8 semestre/Emprededorismo e inovacao": "LiAlbum",
+  "8 semestre/Gestão de TI": "LiComputer"
 }
