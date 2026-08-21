@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiShield",
       "LiActivity",
       "LiAlbum",
       "LiTestTubes",
-      "LiGamepad2",
-      "LiAtom"
+      "LiGamepad2"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -43,5 +43,6 @@
   "8 semestre/Simulação e testes de software": "LiTestTubes",
   "8 semestre/Emprededorismo e inovacao": "LiAlbum",
   "8 semestre/Gestão de TI": "LiComputer",
-  "8 semestre/Interface-humano-computador": "LiActivity"
+  "8 semestre/Interface-humano-computador": "LiActivity",
+  "8 semestre/Segurança da informação": "LiShield"
 }
