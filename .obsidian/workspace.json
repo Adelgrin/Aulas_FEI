@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "8 semestre/Interface-humano-computador/Análise de concorrência.md",
+                "file": "8 semestre/Simulação e testes de software/Ciclo de vida de teste de Software.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Análise de concorrência"
+              "title": "Ciclo de vida de teste de Software"
             }
           }
         ]
@@ -197,10 +197,11 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "95acad85643776a4",
+  "active": "d54a6f5933af2159",
   "lastOpenFiles": [
-    "8 semestre/Segurança da informação",
     "8 semestre/Interface-humano-computador/Análise de concorrência.md",
+    "8 semestre/Simulação e testes de software/Ciclo de vida de teste de Software.md",
+    "8 semestre/Segurança da informação",
     "7 semestre/Sistemas Distribuídos/aulas/9 Exclusão mutua.md",
     "7 semestre/Sistemas Distribuídos/aulas/8 Concorrencia e sincronização.md",
     "7 semestre/Sistemas Distribuídos/aulas/7 MPI.md",
@@ -243,7 +244,6 @@
     "7 semestre/Tópicos avançados de engenharia de software/imagens/Pasted image 20260414214710.png",
     "Desenvolvimento de jogos/Indice",
     "7 semestre/Desenvolvimento de jogos",
-    "Inteligência artificial/aulas/9 Algorítimos genéticos.md~",
     "7 semestre/Inteligência artificial/imagens/-qFhU8uALD5xUJqFHtWmJEE44hkApXRFVo4yo0mGzIo=.png"
   ]
 }
