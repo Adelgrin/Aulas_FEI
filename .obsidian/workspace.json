@@ -11,10 +11,14 @@
             "id": "d54a6f5933af2159",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "8 semestre/Ética/Revisão P1.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Revisão P1"
             }
           }
         ]
@@ -193,8 +197,12 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "552d3aa79c489ed4",
+  "active": "d54a6f5933af2159",
   "lastOpenFiles": [
+    "8 semestre/Simulação e testes de software/Revisão P1.md",
+    "8 semestre/Ética/Revisão P1.md",
+    "8 semestre/Ética",
+    "8 semestre/Simulação e testes de software/Testes backbox.md",
     "8 semestre/Simulação e testes de software/imagens/tabela_decisao.png",
     "8 semestre/Simulação e testes de software/imagens/planejamento.png",
     "8 semestre/Simulação e testes de software/imagens/piramide_testes.png",
@@ -205,11 +213,8 @@
     "8 semestre/Simulação e testes de software/imagens/configuracao_ambiente.png",
     "8 semestre/Simulação e testes de software/imagens/analise_requisitos.png",
     "8 semestre/Simulação e testes de software/imagens/Tabela_riscos.png",
-    "8 semestre/Simulação e testes de software/imagens/Matriz_riscos.png",
     "8 semestre/Simulação e testes de software/imagens",
-    "8 semestre/Simulação e testes de software/Revisão P1.md",
     "8 semestre/Simulação e testes de software/Revisão.md",
-    "8 semestre/Simulação e testes de software/Testes backbox.md",
     "8 semestre/Simulação e testes de software/Testes com o pytest.md",
     "8 semestre/Segurança da informação/Processo de Desenvolvimento de Seguraça Preventiva.md",
     "8 semestre/Gestão de TI/Untitled.md",
@@ -239,7 +244,6 @@
     "8 semestre/Emprededorismo e inovacao",
     "8 semestre/Simulação e testes de software",
     "8 semestre",
-    "7 semestre",
-    "Tópicos avançados de engenharia de software/aulas/5 Construção.md~"
+    "7 semestre"
   ]
 }
