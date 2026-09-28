@@ -8,17 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7e27b0951fe7b349",
+            "id": "d54a6f5933af2159",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "8 semestre/Simulação e testes de software/Revisão P1.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Revisão P1"
+              "title": "New tab"
             }
           }
         ]
@@ -158,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "8 semestre/Simulação e testes de software/Revisão P1.md",
+                "file": "8 semestre/Segurança da informação/Modelagem de ameaças.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -182,7 +178,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 242.5
+    "width": 330.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -197,53 +193,53 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "7e27b0951fe7b349",
+  "active": "552d3aa79c489ed4",
   "lastOpenFiles": [
-    "8 semestre/Simulação e testes de software/imagens/decisao_simplificada.png",
-    "8 semestre/Simulação e testes de software/imagens/decisao_simplificar.png",
     "8 semestre/Simulação e testes de software/imagens/tabela_decisao.png",
+    "8 semestre/Simulação e testes de software/imagens/planejamento.png",
+    "8 semestre/Simulação e testes de software/imagens/piramide_testes.png",
     "8 semestre/Simulação e testes de software/imagens/fronteiras_valor-limite.png",
-    "8 semestre/Simulação e testes de software/Revisão P1.md",
-    "8 semestre/Simulação e testes de software/imagens/Matriz_riscos.png",
-    "8 semestre/Simulação e testes de software/imagens/Tabela_riscos.png",
-    "8 semestre/Simulação e testes de software/Revisão.md~",
-    "Pasted image 20260925120713.png",
-    "Pasted image 20260925115928.png",
-    "8 semestre/Simulação e testes de software/imagens/Encerramento.png",
     "8 semestre/Simulação e testes de software/imagens/execucao.png",
+    "8 semestre/Simulação e testes de software/imagens/decisao_simplificar.png",
+    "8 semestre/Simulação e testes de software/imagens/decisao_simplificada.png",
     "8 semestre/Simulação e testes de software/imagens/configuracao_ambiente.png",
-    "8 semestre/Simulação e testes de software/Ciclo de vida de teste de Software.md",
+    "8 semestre/Simulação e testes de software/imagens/analise_requisitos.png",
+    "8 semestre/Simulação e testes de software/imagens/Tabela_riscos.png",
+    "8 semestre/Simulação e testes de software/imagens/Matriz_riscos.png",
     "8 semestre/Simulação e testes de software/imagens",
-    "8 semestre/Segurança da informação/Modelagem de ameaças.md",
-    "8 semestre/Segurança da informação/Processo de Desenvolvimento de Seguraça Preventiva.md",
-    "7 semestre/Sistemas Distribuídos/aulas/1 revisão docker.md",
+    "8 semestre/Simulação e testes de software/Revisão P1.md",
+    "8 semestre/Simulação e testes de software/Revisão.md",
+    "8 semestre/Simulação e testes de software/Testes backbox.md",
     "8 semestre/Simulação e testes de software/Testes com o pytest.md",
-    "8 semestre/Simulação e testes de software",
-    "8 semestre/Segurança da informação/Images",
-    "8 semestre/Segurança da informação",
-    "8 semestre/Interface-humano-computador/Análise de concorrência.md",
-    "8 semestre/Interface-humano-computador",
+    "8 semestre/Segurança da informação/Processo de Desenvolvimento de Seguraça Preventiva.md",
+    "8 semestre/Gestão de TI/Untitled.md",
     "8 semestre/Gestão de TI/Aula 1.md",
-    "8 semestre/Emprededorismo e inovacao/Aula 1.md",
+    "8 semestre/Segurança da informação/Modelagem de ameaças.md",
+    "8 semestre/Segurança da informação/Images",
+    "8 semestre/Simulação e testes de software/Ciclo de vida de teste de Software.md",
+    "8 semestre/Interface-humano-computador/Análise de concorrência.md",
+    "8 semestre/Segurança da informação",
+    "7 semestre/Sistemas Distribuídos/aulas/9 Exclusão mutua.md",
+    "7 semestre/Sistemas Distribuídos/aulas/8 Concorrencia e sincronização.md",
+    "7 semestre/Sistemas Distribuídos/aulas/7 MPI.md",
+    "7 semestre/Sistemas Distribuídos/aulas/1 revisão docker.md",
+    "7 semestre/Inteligência artificial/aulas/9 Algorítimos genéticos.md",
+    "7 semestre/Inteligência artificial/aulas/10 Redes Neurais.md",
+    "7 semestre/Inteligência artificial/aulas/11 Redes neurais avançadas.md",
+    "7 semestre/Inteligência artificial/aulas/1 Introdução.md",
+    "7 semestre/Gestão de projetos de software/Índice Gestão de projetos.md",
+    "7 semestre/Gestão de projetos de software/labs/Escolhas de reuso de software.md",
+    "7 semestre/Gestão de projetos de software/labs/Definições de projeto.md",
+    "7 semestre/Gestão de projetos de software/aulas/5 Monitoramento e controle de projeto.md",
+    "7 semestre/Gestão de projetos de software/aulas/6 SOA (Service Oriented Archtecture) para microserviços.md",
+    "7 semestre/Gestão de projetos de software/aulas/4 gerenciamento de tempo.md",
+    "7 semestre/Gestão de projetos de software/aulas/3 gerenciamento de escopo.md",
+    "8 semestre/Interface-humano-computador",
     "8 semestre/Gestão de TI",
     "8 semestre/Emprededorismo e inovacao",
+    "8 semestre/Simulação e testes de software",
     "8 semestre",
-    "Tópicos avançados de engenharia de software/aulas/4 Design de um serviço.md",
-    "7 semestre/Tópicos avançados de engenharia de software/labs/Inicio de projeto.md",
-    "7 semestre/Tópicos avançados de engenharia de software/labs/Escolhas de reuso de software.md",
-    "7 semestre/Tópicos avançados de engenharia de software/aulas/6 Linhas de produtos de software.md",
-    "7 semestre/Tópicos avançados de engenharia de software/aulas/5 Construção.md",
-    "7 semestre/Tópicos avançados de engenharia de software/aulas/4 Design de um serviço.md",
-    "7 semestre/Tópicos avançados de engenharia de software/aulas/3 ESBC.md",
-    "7 semestre/Tópicos avançados de engenharia de software/aulas/2 Reuso de software.md",
-    "7 semestre/Tópicos avançados de engenharia de software/aulas/1 Introdução matéria.md",
-    "7 semestre/Sistemas Distribuídos/projeto/parte5.md",
-    "7 semestre/Sistemas Distribuídos/projeto/parte4.md",
-    "7 semestre/Sistemas Distribuídos/projeto/parte3.md",
-    "7 semestre/Sistemas Distribuídos/projeto/parte2.md",
-    "7 semestre/Sistemas Distribuídos/projeto/parte1.md",
-    "7 semestre/Sistemas Distribuídos/projeto/enunciado.md",
-    "7 semestre/Sistemas Distribuídos/labs/Desenvolvimento Docker Compose.md",
-    "7 semestre/Tópicos avançados de engenharia de software/labs"
+    "7 semestre",
+    "Tópicos avançados de engenharia de software/aulas/5 Construção.md~"
   ]
 }
