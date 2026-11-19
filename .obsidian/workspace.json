@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "8 semestre/Simulação e testes de software/Revisão P1.md",
+                "file": "8 semestre/Ética/Revisão p2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Revisão P1"
+              "title": "Revisão p2"
             }
           }
         ]
@@ -199,11 +199,13 @@
   },
   "active": "7e27b0951fe7b349",
   "lastOpenFiles": [
+    "8 semestre/Simulação e testes de software/Revisão P1.md",
+    "8 semestre/Ética/Revisão p2.md",
+    "8 semestre/Ética",
     "8 semestre/Simulação e testes de software/imagens/decisao_simplificada.png",
     "8 semestre/Simulação e testes de software/imagens/decisao_simplificar.png",
     "8 semestre/Simulação e testes de software/imagens/tabela_decisao.png",
     "8 semestre/Simulação e testes de software/imagens/fronteiras_valor-limite.png",
-    "8 semestre/Simulação e testes de software/Revisão P1.md",
     "8 semestre/Simulação e testes de software/imagens/Matriz_riscos.png",
     "8 semestre/Simulação e testes de software/imagens/Tabela_riscos.png",
     "8 semestre/Simulação e testes de software/Revisão.md~",
@@ -211,7 +213,6 @@
     "Pasted image 20260925115928.png",
     "8 semestre/Simulação e testes de software/imagens/Encerramento.png",
     "8 semestre/Simulação e testes de software/imagens/execucao.png",
-    "8 semestre/Simulação e testes de software/imagens/configuracao_ambiente.png",
     "8 semestre/Simulação e testes de software/Ciclo de vida de teste de Software.md",
     "8 semestre/Simulação e testes de software/imagens",
     "8 semestre/Segurança da informação/Modelagem de ameaças.md",
@@ -243,7 +244,6 @@
     "7 semestre/Sistemas Distribuídos/projeto/parte2.md",
     "7 semestre/Sistemas Distribuídos/projeto/parte1.md",
     "7 semestre/Sistemas Distribuídos/projeto/enunciado.md",
-    "7 semestre/Sistemas Distribuídos/labs/Desenvolvimento Docker Compose.md",
-    "7 semestre/Tópicos avançados de engenharia de software/labs"
+    "7 semestre/Sistemas Distribuídos/labs/Desenvolvimento Docker Compose.md"
   ]
 }
