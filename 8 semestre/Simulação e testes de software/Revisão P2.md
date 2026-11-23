@@ -151,3 +151,48 @@ $P$: nós de decisão com dois ramos.
 		Toda combinação de valores das condições; com $n$ condições, $2^n$ testes.
 ### Condições/decisão modificadas (MC/DC):
 > Critério que exige CDC e o efeito independente de cada condição. Para cada condição, dois testes que diferem só nela e mudam o valor da decisão.
+
+## Qualidade da suíte de testes
+### Eficácia de uma suíte
+Capacidade da suíte de detectar defeitos. A medida ideal seria contar os defeitos reais que ela encontra.
+
+- Problema:
+		os defeitos reais de um programa não são conhecidos de antemão.
+- Saída:
+		plantar defeitos conhecidos e ver se a suíte os encotra.
+- Cada defeito plantado é uma pequena mudança no código, como trocar > por >=
+> as técnicas das aulas 6 e 8 controem a suíte. escolhem as entradas pela especificação ou pelo código
+
+> os testes de mutação avaliam a suíte pronta. e medem quantos defeitos plantados ela detecta
+
+> [!Termos de mutação]
+Mutante: cópia do programa com uma única mudança pequena no código.
+Operador de mutação: regra que gera mutantes, como trocar > por >=
+Mutante morto: algum teste da suíte falha quando roda contra ele.
+Mutante vivo: todos os testes passam; também se diz sobrevivente.
+escore de mutação: fração dos mutantes que a suíte mata.
+
+| sigla | operador                     | exemplo em python        |
+| ----- | ---------------------------- | ------------------------ |
+| AOR   | Troca de operador aritmético | a + b vira a - b         |
+| ROR   | Troca de operador relacional | a > b vira a >= b        |
+| LCR   | Troca de conector lógico     | a or b vira a and b      |
+| UOI   | Inserção de operador unário  | x vira not x             |
+| SBR   | Remoção de comando ou bloco  | a linha deixa de existir |
+
+### Condições para matar um mutante
+1. alcançar: o teste chega ao ponto alterado?
+2. Infectar: a alteração produz uma diferença interna?
+3. Propagar: essa diferença chega ao retorno?
+4. Revelar: o oráculo (verificação do teste) percebe a diferença?
+
+### Mutantes equivalentes
+> Mutante que produz a mesma saída que o original para toda entrada válida. Nenhum teste consegue matá-lo.
+
+```python
+#Mutante 4 da tarifa
+if horas >= 1: #original horas > 1
+	valor = valor + (horas - 1) * 5
+```
+A única entrada em que a decisão muda é horas = 1, e aí a conta soma $0 \times 5$
+
