@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "8 semestre/Simulação e testes de software/Revisão P2.md",
+                "file": "8 semestre/Interface-humano-computador/Revisão P2.md",
                 "mode": "source",
                 "source": false
               },
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "8 semestre/Simulação e testes de software/Revisão P2.md",
+                "file": "8 semestre/Interface-humano-computador/Revisão P2.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -199,10 +199,15 @@
   },
   "active": "552d3aa79c489ed4",
   "lastOpenFiles": [
+    "8 semestre/Interface-humano-computador/imagens/Pasted image 20261125175620.png",
+    "8 semestre/Interface-humano-computador/imagens",
+    "8 semestre/Interface-humano-computador/Revisão P2.md",
+    "8 semestre/Interface-humano-computador/Untitled.md",
+    "8 semestre/Interface-humano-computador/imagens/Pasted image 20261125175303.png",
+    "8 semestre/Simulação e testes de software/Revisão P2.md",
     "8 semestre/Simulação e testes de software/imagens/Pasted image 20261122171902.png",
     "8 semestre/Simulação e testes de software/imagens/Pasted image 20261122171822.png",
     "8 semestre/Simulação e testes de software/imagens/Pasted image 20261122152302.png",
-    "8 semestre/Simulação e testes de software/Revisão P2.md",
     "Pasted image 20261122152421.png",
     "8 semestre/Simulação e testes de software/imagens/Pasted image 20261122152401.png",
     "8 semestre/Simulação e testes de software/imagens/Pasted image 20261122151806.png",
@@ -215,8 +220,6 @@
     "8 semestre/Simulação e testes de software/Revisão P1.md",
     "8 semestre/Ética",
     "8 semestre/Simulação e testes de software/imagens/decisao_simplificada.png",
-    "8 semestre/Simulação e testes de software/imagens/decisao_simplificar.png",
-    "8 semestre/Simulação e testes de software/imagens/tabela_decisao.png",
     "8 semestre/Simulação e testes de software/Revisão.md~",
     "8 semestre/Simulação e testes de software/Ciclo de vida de teste de Software.md",
     "8 semestre/Simulação e testes de software/imagens",
@@ -233,7 +236,6 @@
     "8 semestre/Emprededorismo e inovacao/Aula 1.md",
     "8 semestre/Gestão de TI",
     "8 semestre/Emprededorismo e inovacao",
-    "8 semestre",
     "Tópicos avançados de engenharia de software/aulas/4 Design de um serviço.md",
     "7 semestre/Tópicos avançados de engenharia de software/labs/Inicio de projeto.md",
     "7 semestre/Tópicos avançados de engenharia de software/labs/Escolhas de reuso de software.md",
@@ -242,8 +244,6 @@
     "7 semestre/Tópicos avançados de engenharia de software/aulas/4 Design de um serviço.md",
     "7 semestre/Tópicos avançados de engenharia de software/aulas/3 ESBC.md",
     "7 semestre/Tópicos avançados de engenharia de software/aulas/2 Reuso de software.md",
-    "7 semestre/Tópicos avançados de engenharia de software/aulas/1 Introdução matéria.md",
-    "7 semestre/Sistemas Distribuídos/projeto/parte5.md",
-    "7 semestre/Sistemas Distribuídos/projeto/parte4.md"
+    "7 semestre/Tópicos avançados de engenharia de software/aulas/1 Introdução matéria.md"
   ]
 }
